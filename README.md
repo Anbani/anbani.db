@@ -42,3 +42,8 @@ anbani.lorem.names(3)
 anbani.lorem.sentences(10)
 // 'მოეხვიდეს სიტირენ გიშიხარნი. წეითო გამიზრიან, ჰქონთავისთან გემრუფენ, უკრთებოდემნი მესმანცა მყივნე.'
 ```
+
+
+# Disclaimer
+Datasets are available freely for non-commercial purposes only. For commercial purposes, contact the corresponding source. 
+
