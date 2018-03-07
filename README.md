@@ -6,26 +6,39 @@ Some of these datasets were fed to Neural Networks (char-rnn by Andrej Karpathy)
 
 
 ## Datasets
-Here's a detailed table for the datasets:
 
-| Name               | Description                                             | Source                | Count      |
-|--------------------|---------------------------------------------------------|-----------------------|------------|
-| vefxistyaosani.txt | Entire text of "The Knight with the Panther skin"       | don't remember        | 8524 lines |
-| aforizmebi.txt     | Georgian aphorisms                                      | various sources       | 132 lines  |
-| poetswriters.txt   | First and Last names of Georgian Poets and Writers      | ka.wikipedia.org      | 544 lines  |
-| names.csv          | Baby names in Georgian with various origins             | kids.ge ©             | 2094 lines |
-| anbani.csv         | Full Georgian alphabet with descriptions and char codes | unicode.org           | 175 lines  |
+| Name               | Description                                             | Source                | Count      | URL |
+|--------------------|---------------------------------------------------------|-----------------------|------------|-----|
+| vefxistyaosani.txt | Entire text of "The Knight with the Panther skin"       | don't remember        | 8524 lines | [Download](https://github.com/Anbani/anbani.db/blob/master/datasets/vefxistyaosani.txt)
+| aforizmebi.txt     | Georgian aphorisms                                      | various sources       | 132 lines  | [Download](https://github.com/Anbani/anbani.db/blob/master/datasets/aforizmebi.txt)
+| poetswriters.txt   | First and Last names of Georgian Poets and Writers      | ka.wikipedia.org      | 544 lines  | [Download](https://github.com/Anbani/anbani.db/blob/master/datasets/poetswriters.txt)
+| names.csv          | Baby names in Georgian with various origins             | kids.ge ©             | 2094 lines | [Download](https://github.com/Anbani/anbani.db/blob/master/datasets/names.csv)
+| anbani.csv         | Full Georgian alphabet with descriptions and char codes | unicode.org           | 175 lines  | [Download](https://github.com/Anbani/anbani.db/blob/master/datasets/anbani.csv)
 
 
 ## Fakesets
-Here's a detailed table for the fakesets:
 
-| Name                  | Description                                             | Source          | Count       |
-|-----------------------|---------------------------------------------------------|-----------------|-------------|
-| fake-aforizmebi.txt   | Georgian aphorisms generated using char-rnn             | anbani.db       | 17047 lines |
-| fake-poetswriters.txt | Fake poetic names trained on Georgian poets and writers | anbani.db       | 2514 lines  |
-| fake-names.csv        | Fake names trained on Georgian subset of baby names     | anbani.db       | 60961 lines |
+| Name                  | Description                                             | Source          | Count       | URL |
+|-----------------------|---------------------------------------------------------|-----------------|-------------|-----|
+| fake-aforizmebi.txt   | Georgian aphorisms generated using char-rnn             | anbani.db       | 17047 lines | [Download](https://github.com/Anbani/anbani.db/blob/master/fakesets/fake-aforizmebi.txt)
+| fake-poetswriters.txt | Fake poetic names trained on Georgian poets and writers | anbani.db       | 2514 lines  | [Download](https://github.com/Anbani/anbani.db/blob/master/fakesets/fake-poetswriters.txt)
+| fake-names.csv        | Fake names trained on Georgian subset of baby names     | anbani.db       | 60961 lines | [Download](https://github.com/Anbani/anbani.db/blob/master/fakesets/fake-names.csv)
 
 
 # Resources
-Fake Georgian text and names generation is supported by `anbani.js` - a multifunctional Javascript library for working with Georgian Alphabet. 
+Fake Georgian text and names generation is supported by `anbani.js` - a multifunctional Javascript library for working with Georgian Alphabet. [Read more about the package here [anbani/anbani.js]](https://github.com/Anbani/anbani.js)
+```bash
+npm install anbani
+```
+```javascript
+var anbani = require('anbani')
+
+anbani.core.convert("ანბანი", "მხედრული", "ასომთავრული")
+// 'ႠႬႡႠႬႨ'
+
+anbani.lorem.names(3)
+// ['დამერ გაშვითელი', 'სიბო ყორთელია', 'გიმოლ ვაწოშვილი']
+
+anbani.lorem.sentences(10)
+// 'მოეხვიდეს სიტირენ გიშიხარნი. წეითო გამიზრიან, ჰქონთავისთან გემრუფენ, უკრთებოდემნი მესმანცა მყივნე.'
+```
