@@ -26,7 +26,7 @@ Some of these datasets were fed to Neural Networks (char-rnn by Andrej Karpathy)
 
 
 # Resources
-Fake Georgian text and names generation is supported by `anbani.js` - a multifunctional Javascript library for working with Georgian Alphabet. [Read more about the package here [anbani/anbani.js]](https://github.com/Anbani/anbani.js)
+Fake Georgian text and names generation is supported by `anbani.js` - a multifunctional Javascript library for working with Georgian Alphabet. Read more about the package here [[anbani/anbani.js]](https://github.com/Anbani/anbani.js)
 ```bash
 npm install anbani
 ```
