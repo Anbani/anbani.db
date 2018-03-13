@@ -23,10 +23,12 @@ Some of these datasets were fed to Neural Networks (char-rnn by Andrej Karpathy)
 | fake-aforizmebi.txt   | Georgian aphorisms generated using char-rnn             | anbani.db       | 17047 lines | [Download](https://github.com/Anbani/anbani.db/blob/master/fakesets/fake-aforizmebi.txt)
 | fake-poetswriters.txt | Fake poetic names trained on Georgian poets and writers | anbani.db       | 2514 lines  | [Download](https://github.com/Anbani/anbani.db/blob/master/fakesets/fake-poetswriters.txt)
 | fake-names.csv        | Fake names trained on Georgian subset of baby names     | anbani.db       | 60961 lines | [Download](https://github.com/Anbani/anbani.db/blob/master/fakesets/fake-names.csv)
-| fake-vefxistyaosani.txt        | Char-RNN mimmicing Shota Rustaveli (not well)     | anbani.db       | 26032 lines | [Download](https://github.com/Anbani/anbani.db/blob/master/fakesets/fake-vefxistyaosani.txt)
+| fake-vefxistyaosani.txt        | Char-RNN mimicking Shota Rustaveli (not well)     | anbani.db       | 26032 lines | [Download](https://github.com/Anbani/anbani.db/blob/master/fakesets/fake-vefxistyaosani.txt)
 
 # Resources
-Fake Georgian text and names generation is supported by `anbani.js` - a multifunctional Javascript library for working with Georgian Alphabet. Read more about the package here [[anbani/anbani.js]](https://github.com/Anbani/anbani.js)
+Here are some of the resources you might like.
+### anbani.js
+Fake Georgian text and names generation is supported by `anbani.js` - a multifunctional Javascript library for working with Georgian Alphabet. Read more about the package here [[anbani / anbani.js]](https://github.com/Anbani/anbani.js)
 ```bash
 npm install anbani
 ```
@@ -42,7 +44,8 @@ anbani.lorem.names(3)
 anbani.lorem.sentences(10)
 // 'მოეხვიდეს სიტირენ გიშიხარნი. წეითო გამიზრიან, ჰქონთავისთან გემრუფენ, უკრთებოდემნი მესმანცა მყივნე.'
 ```
-
+### awesome-georgian-datasets
+For other awesome Georgian datasets, visit [[bumbeishvili / awesome-georgian-datasets]](https://github.com/bumbeishvili/awesome-georgian-datasets)
 
 # Disclaimer
 Datasets are available freely for non-commercial purposes only. For commercial purposes, contact the corresponding source. 
