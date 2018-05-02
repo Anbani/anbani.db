@@ -9,7 +9,9 @@ Some of these datasets were fed to Neural Networks (char-rnn by Andrej Karpathy)
 
 | Name               | Description                                             | Source                | Count      | URL |
 |--------------------|---------------------------------------------------------|-----------------------|------------|-----|
-| vefxistyaosani.csv | Entire text of "The Knight with the Panther skin"       |                       | 8524 lines | [Download](https://github.com/Anbani/anbani.db/blob/master/datasets/vefxistyaosani.csv)
+| vefxistyaosani.csv | Labeled text of "The Knight with the Panther skin"      |                       | 6678 lines | [Download](https://github.com/Anbani/anbani.db/blob/master/datasets/vefxistyaosani.csv)
+| quotes.csv         | Quotes from 184 famous people in Georgian               | ka.wikiquote.org      | 3683 lines | [Download](https://github.com/Anbani/anbani.db/blob/master/datasets/quotes.csv)
+| vefxistyaosani.txt | Raw text of "The Knight with the Panther skin"          |                       | 8524 lines | [Download](https://github.com/Anbani/anbani.db/blob/master/datasets/vefxistyaosani.txt)
 | aforizmebi.txt     | Georgian aphorisms                                      | various sources       | 132 lines  | [Download](https://github.com/Anbani/anbani.db/blob/master/datasets/aforizmebi.txt)
 | poetswriters.txt   | First and Last names of Georgian Poets and Writers      | ka.wikipedia.org      | 544 lines  | [Download](https://github.com/Anbani/anbani.db/blob/master/datasets/poetswriters.txt)
 | names.csv          | Baby names in Georgian with various origins             | kids.ge ©             | 2094 lines | [Download](https://github.com/Anbani/anbani.db/blob/master/datasets/names.csv)
