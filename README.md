@@ -21,7 +21,7 @@ Some of these datasets were fed to Neural Networks (char-rnn by Andrej Karpathy)
 
 ## Fakesets
 
-| Name                  | Description                                             | Source          | Count       | URL |
+| Name                  | Description                                             | Source          | Lines       | URL |
 |-----------------------|---------------------------------------------------------|-----------------|-------------|-----|
 | fake-aforizmebi.txt   | Georgian aphorisms generated using char-rnn             | anbani.db       | 17047       | [GET](https://github.com/Anbani/anbani.db/blob/master/fakesets/fake-aforizmebi.txt)
 | fake-poetswriters.txt | Fake poetic names trained on Georgian poets and writers | anbani.db       | 2514        | [GET](https://github.com/Anbani/anbani.db/blob/master/fakesets/fake-poetswriters.txt)
