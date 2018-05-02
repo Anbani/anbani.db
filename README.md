@@ -7,25 +7,26 @@ Some of these datasets were fed to Neural Networks (char-rnn by Andrej Karpathy)
 
 ## Datasets
 
-| Name               | Description                                             | Source                | Count      | URL |
+| Name               | Description                                             | Source                | Lines      | URL |
 |--------------------|---------------------------------------------------------|-----------------------|------------|-----|
-| vefxistyaosani.csv | Labeled text of "The Knight with the Panther skin"      |                       | 6678 lines | [Download](https://github.com/Anbani/anbani.db/blob/master/datasets/vefxistyaosani.csv)
-| quotes.csv         | Quotes from 184 famous people in Georgian               | ka.wikiquote.org      | 3683 lines | [Download](https://github.com/Anbani/anbani.db/blob/master/datasets/quotes.csv)
-| vefxistyaosani.txt | Raw text of "The Knight with the Panther skin"          |                       | 8524 lines | [Download](https://github.com/Anbani/anbani.db/blob/master/datasets/vefxistyaosani.txt)
-| aforizmebi.txt     | Georgian aphorisms                                      | various sources       | 132 lines  | [Download](https://github.com/Anbani/anbani.db/blob/master/datasets/aforizmebi.txt)
-| poetswriters.txt   | First and Last names of Georgian Poets and Writers      | ka.wikipedia.org      | 544 lines  | [Download](https://github.com/Anbani/anbani.db/blob/master/datasets/poetswriters.txt)
-| names.csv          | Baby names in Georgian with various origins             | kids.ge ©             | 2094 lines | [Download](https://github.com/Anbani/anbani.db/blob/master/datasets/names.csv)
-| anbani.csv         | Full Georgian alphabet with descriptions and char codes | unicode.org           | 175 lines  | [Download](https://github.com/Anbani/anbani.db/blob/master/datasets/anbani.csv)
+| vefxistyaosani.csv | Labeled text of "The Knight with the Panther skin"      |                       | 6678       | [GET](https://github.com/Anbani/anbani.db/blob/master/datasets/vefxistyaosani.csv)
+| quotes.csv         | Quotes from 184 famous people in Georgian               | ka.wikiquote.org      | 3683       | [GET](https://github.com/Anbani/anbani.db/blob/master/datasets/quotes.csv)
+| aforizmebi.txt     | Georgian aphorisms                                      | various sources       | 132        | [GET](https://github.com/Anbani/anbani.db/blob/master/datasets/aforizmebi.txt)
+| poetswriters.txt   | First and Last names of Georgian Poets and Writers      | ka.wikipedia.org      | 544        | [GET](https://github.com/Anbani/anbani.db/blob/master/datasets/poetswriters.txt)
+| names.csv          | Baby names in Georgian with various origins             | kids.ge ©             | 2094       | [GET](https://github.com/Anbani/anbani.db/blob/master/datasets/names.csv)
+| anbani.csv         | Full Georgian alphabet with descriptions and char codes | unicode.org           | 175        | [GET](https://github.com/Anbani/anbani.db/blob/master/datasets/anbani.csv)
+| vefxistyaosani.txt | Raw text of "The Knight with the Panther skin"          |                       | 8524       | [GET](https://github.com/Anbani/anbani.db/blob/master/datasets/vefxistyaosani.txt)
+
 
 
 ## Fakesets
 
 | Name                  | Description                                             | Source          | Count       | URL |
 |-----------------------|---------------------------------------------------------|-----------------|-------------|-----|
-| fake-aforizmebi.txt   | Georgian aphorisms generated using char-rnn             | anbani.db       | 17047 lines | [Download](https://github.com/Anbani/anbani.db/blob/master/fakesets/fake-aforizmebi.txt)
-| fake-poetswriters.txt | Fake poetic names trained on Georgian poets and writers | anbani.db       | 2514 lines  | [Download](https://github.com/Anbani/anbani.db/blob/master/fakesets/fake-poetswriters.txt)
-| fake-names.csv        | Fake names trained on Georgian subset of baby names     | anbani.db       | 60961 lines | [Download](https://github.com/Anbani/anbani.db/blob/master/fakesets/fake-names.csv)
-| fake-vefxistyaosani.txt        | Char-RNN mimicking Shota Rustaveli (not well)     | anbani.db       | 26032 lines | [Download](https://github.com/Anbani/anbani.db/blob/master/fakesets/fake-vefxistyaosani.txt)
+| fake-aforizmebi.txt   | Georgian aphorisms generated using char-rnn             | anbani.db       | 17047       | [GET](https://github.com/Anbani/anbani.db/blob/master/fakesets/fake-aforizmebi.txt)
+| fake-poetswriters.txt | Fake poetic names trained on Georgian poets and writers | anbani.db       | 2514        | [GET](https://github.com/Anbani/anbani.db/blob/master/fakesets/fake-poetswriters.txt)
+| fake-names.csv        | Fake names trained on Georgian subset of baby names     | anbani.db       | 60961       | [GET](https://github.com/Anbani/anbani.db/blob/master/fakesets/fake-names.csv)
+| fake-vefxistyaosani.txt        | Char-RNN mimicking Shota Rustaveli (not well)  | anbani.db       | 26032      | [GET](https://github.com/Anbani/anbani.db/blob/master/fakesets/fake-vefxistyaosani.txt)
 
 # Resources
 Here are some of the resources you might like.
