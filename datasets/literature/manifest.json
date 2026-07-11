@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "canonical_format": "UTF-8 NFC plain text",
+  "public_domain_jurisdiction": "Georgia",
+  "works": [
+    { "id": "sibrdze-sitsruisa", "title": "სიბრძნე სიცრუისა", "author": "სულხან-საბა ორბელიანი", "death_year": 1725, "status": "ready" },
+    { "id": "kacia-adamiani", "title": "კაცია-ადამიანი?!", "author": "ილია ჭავჭავაძე", "death_year": 1907, "status": "ready" },
+    { "id": "otaraanth-qvrivi", "title": "ოთარაანთ ქვრივი", "author": "ილია ჭავჭავაძე", "death_year": 1907, "status": "ready" },
+    { "id": "khevisberi-gocha", "title": "ხევისბერი გოჩა", "author": "ალექსანდრე ყაზბეგი", "death_year": 1893, "status": "ready" },
+    { "id": "shvlis-nukris-naambobi", "title": "შვლის ნუკრის ნაამბობი", "author": "ვაჟა-ფშაველა", "death_year": 1915, "status": "ready" },
+    { "id": "samanishvilis-dedinacvali", "title": "სამანიშვილის დედინაცვალი", "author": "დავით კლდიაშვილი", "death_year": 1931, "status": "ready" },
+    { "id": "jaqos-khiznebi", "title": "ჯაყოს ხიზნები", "author": "მიხეილ ჯავახიშვილი", "death_year": 1937, "status": "ready" },
+    { "id": "arsena-marabdeli", "title": "არსენა მარაბდელი", "author": "მიხეილ ჯავახიშვილი", "death_year": 1937, "status": "source-needed", "reason": "Wikisource index entry is a red link; no reusable full transcription was found." },
+    { "id": "shelocvili-mamuli", "title": "შელოცვილი მამული", "author": "ნიკო ლორთქიფანიძე", "death_year": 1944, "status": "invalid-title", "reason": "No authoritative bibliographic record found; possibly confused with შელოცვა რადიოთი." },
+    { "id": "gogia-uishvili", "title": "გოგია უიშვილი", "author": "ეგნატე ნინოშვილი", "death_year": 1894, "status": "ready" },
+    { "id": "vefxistyaosani", "title": "ვეფხისტყაოსანი", "author": "შოთა რუსთაველი", "status": "ready", "path": "../vefxistyaosani.txt", "source_review": "needed" },
+    { "id": "merani", "title": "მერანი", "author": "ნიკოლოზ ბარათაშვილი", "death_year": 1845, "status": "ready" },
+    { "id": "stumarmaspindzeli", "title": "სტუმარ-მასპინძელი", "author": "ვაჟა-ფშაველა", "death_year": 1915, "status": "ready" },
+    { "id": "aluda-qetelauri", "title": "ალუდა ქეთელაური", "author": "ვაჟა-ფშაველა", "death_year": 1915, "status": "ready" },
+    { "id": "gandegili", "title": "განდეგილი", "author": "ილია ჭავჭავაძე", "death_year": 1907, "status": "ready" },
+    { "id": "gamzrdeli", "title": "გამზრდელი", "author": "აკაკი წერეთელი", "death_year": 1915, "status": "ready" },
+    { "id": "davitiani", "title": "დავითიანი", "author": "დავით გურამიშვილი", "death_year": 1792, "status": "transcription-needed", "source": "https://www.nplg.gov.ge/ebooks/authors/david_guramishvili/davitian.pdf", "reason": "Institutional scan found; Wikisource page contains only the collection contents." },
+    { "id": "tano-tatano", "title": "ტანო ტატანო", "author": "ბესიკი", "death_year": 1791, "status": "ready" },
+    { "id": "leqsi-myeqeri", "title": "ლექსი მეწყერი", "author": "ტიციან ტაბიძე", "death_year": 1937, "status": "ready" },
+    { "id": "memento-mori", "title": "Memento Mori", "author": "ტერენტი გრანელი", "death_year": 1934, "status": "ready" }
+  ]
+}
