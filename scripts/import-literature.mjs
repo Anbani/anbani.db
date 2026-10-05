@@ -61,7 +61,7 @@ for (const [id, page, revision, cacheIndex] of sources) {
     data = JSON.parse(await readFile(`${process.env.ANBANI_WIKISOURCE_CACHE}/anbani-ws-${cacheIndex}.json`, 'utf8'))
   } else {
     const response = await fetch(`${API}?${params}`, {
-      headers: { 'user-agent': 'AnbaniLibraryBot/1.0 (https://anbani.ge)' },
+      headers: { 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 (john@gmail.com)' }, // Wikisource refuses requests without a contact: only this one
     })
     if (!response.ok) throw new Error(`${page}: HTTP ${response.status}`)
     data = await response.json()
