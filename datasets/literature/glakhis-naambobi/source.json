@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "გლახის ნაამბობი",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=73000",
+  "revision": 73000,
+  "retrieved": "2026-10-26",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "7bc44022b6de9f3b555d57d38057e68dab29cef4d00effebc03ffc11e86a6bab",
+  "sha256_md": "b7d234e562b226ad71b39c0a17b775b8d99e99f17fed1440cd6b5e7ebd6d229f"
+}

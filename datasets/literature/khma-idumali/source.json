@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "ხმა იდუმალი",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=76149",
+  "revision": 76149,
+  "retrieved": "2026-10-26",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "aa39cd01607052bf3f89fd602f38ba5397a240e834c0de99107450817a8303eb",
+  "sha256_md": "38f2c544ca2635eb596dbc074115df31fb8c32f13fa1378bc22f11ca4ba98815"
+}

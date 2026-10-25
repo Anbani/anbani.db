@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "ღამე მთაში",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=75624",
+  "revision": 75624,
+  "retrieved": "2026-10-26",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "2f57e0118153ab9202ce2445bc52ba0243cbf2ce96badf970d052d7a1f068174",
+  "sha256_md": "43d05afa7fbef634bbe041c69e96499bb1d3ae5d14b7e52726517e294f7ca9d4"
+}

@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "მიქელა",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=74474",
+  "revision": 74474,
+  "retrieved": "2026-10-26",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "419b73f947a254538d84c5982f37136082fba75848b52e983b58162e90134c37",
+  "sha256_md": "9e47ef0fca2a5c3281c85a80754127dec0b73fb8108e55a793e9f304c44da5b5"
+}

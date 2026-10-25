@@ -2,7 +2,8 @@
 
 Public-domain Georgian prose and poetry (Georgia: author died 70+ years ago), one directory per work.
 `manifest.json` lists every work: `ready` texts, and the rest of the top-100 canon ([top100/](top100/README.md)):
-`source-needed`, `transcription-needed`, `copyright` (`public_domain_year`).
+`source-needed`, `transcription-needed`, `copyright` (`public_domain_year`). `top100_rank`: place in the top 100;
+`rank`: 101+ for the public-domain works ranked after it (`top100/ranking-101.tsv`).
 
 ## Per work
 
@@ -28,5 +29,6 @@ python3 scripts/literature/import.py --derive [id ...]                 # after e
 A manifest entry with `wikisource: {page, revision}` (or `parts`) is importable. The converter reads structure from
 lines (paragraphs, stanzas, scan wraps rejoined), applies the typography rules (spaces after punctuation, dashes,
 year ranges) and decides line-wrap hyphens against the rest of the corpus. Per-work fixes live in `import.py`
-(`CORRECTIONS`, `FIXUPS`). An existing text.md is kept unless `--force`; hand fixes go into text.md, then `--derive`.
+(`CORRECTIONS` for typos, `LAYOUT` for source layout and apparatus, `FIXUPS`, `STANZAS` for poems in regular
+stanzas whose source lost the breaks: lines per stanza, from Argon's per-poem review). An existing text.md is kept unless `--force`; hand fixes go into text.md, then `--derive`.
 `vefxistyaosani` stays at `../vefxistyaosani.txt` (own format, source review pending).

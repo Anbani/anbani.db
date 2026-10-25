@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "მოძღვარი",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=77048",
+  "revision": 77048,
+  "retrieved": "2026-10-26",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "f4c9204c9bf2ba2ecaf1a7b6f6c21eb65beef024747f09fc972272bd260c89ef",
+  "sha256_md": "21941f7733f2744a49442ecef4dc690468192dfc2d54f250ace45fd2885dbad1"
+}

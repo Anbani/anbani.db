@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "ელისო",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=73265",
+  "revision": 73265,
+  "retrieved": "2026-10-26",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "1692044fe0f06274e8cd5955cbc38ccd10097879323c67f86fea9225b42ab454",
+  "sha256_md": "d4515894f33cac33823bbeed4807baf223966177417578ea1bf0b75018ab3ae6"
+}

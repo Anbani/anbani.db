@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "პატარა კახი",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=74927",
+  "revision": 74927,
+  "retrieved": "2026-10-26",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "d668cbca7f7c77665aa75eb7642d778c79a1b5ab115793dd642d4a9c2b09ed1d",
+  "sha256_md": "87a73bb4db469ce83d1805249acd4395c3a84fb971e99cd76326225ef71f6943"
+}

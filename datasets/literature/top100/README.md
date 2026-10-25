@@ -18,3 +18,9 @@ Onboarding (2026-10-25): the 71 public-domain works plus the public-domain works
 (`top100_rank` set for the top-100 ones); the rest are `source-needed` (no Wikisource transcription; NPLG e-books and
 TITUS are the next sources) or `transcription-needed`. The 29 works in copyright are listed as `copyright` with
 `public_domain_year` and stay out of the library until then.
+
+Beyond the 100 (2026-10-26): George wants 100 readable works on anbani.ge, locked ones not counted. The same three
+models each picked and ranked 60 of the 225 public-domain works outside the top 100 (220 shortlist rows + 5 they
+named), blind. `ranking-101.tsv`: the union of their picks, ordered by Borda (`borda` = Σ 61 − rank, a model's
+unpicked work scores 0), Argon breaking ties; `rank` 101–193. The manifest's `rank` field carries it for onboarded
+works, and the shelves sort them after the top 100.

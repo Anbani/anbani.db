@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "საყურე",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=75186",
+  "revision": 75186,
+  "retrieved": "2026-10-26",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "bfb4b6f1753d21ec3eb75fd573cf31f3554bcb75aaf064f98f837a7e346204af",
+  "sha256_md": "db116c013fa73b7148109278214c4b594696bd39a08b9aa6183b1db9783c07f2"
+}

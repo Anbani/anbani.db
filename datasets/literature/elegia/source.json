@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "ელეგია (ილია ჭავჭავაძე)",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=73252",
+  "revision": 73252,
+  "retrieved": "2026-10-26",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "3e8639cc90619a170623df28b0a32550d8ad29774751c642d5c5ba13083a4a64",
+  "sha256_md": "040e9739d7d3505e69515b5c04069adbed5fd7f7739ab17fcf49337e855e5369"
+}

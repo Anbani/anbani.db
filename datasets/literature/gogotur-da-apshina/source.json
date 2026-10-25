@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "გოგოთურ და აფშინა",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=73010",
+  "revision": 73010,
+  "retrieved": "2026-10-26",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "8b6d95052c17f9565492ea4ccf1539e1e88af64d5958eda903b10d85277a289f",
+  "sha256_md": "86c6c5f3a0eb1ac7ce26bfc750dcd7dfa890a9d3de25144dd5af7274a0ed876c"
+}

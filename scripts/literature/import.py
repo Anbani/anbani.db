@@ -27,8 +27,20 @@ CORRECTIONS = {
         ('ალერსი?ნ', 'ალერსი?'), ('გახადა?ნ-ონისეს', 'გახადა? ონისეს'), ('3ხოლოდ მაშინ', 'მხოლოდ მაშინ'),
         ('დამ.ლული', 'დამალული'), ('სდებდნენ.     "', 'სდებდნენ.'), ('-  - მთები', '- მთები')],
 }
-DASH_HYPHENS = {'mamis-mkvleli'}
-QUATRAINS = {'gandegili'}  # in quatrains; the source drops the stanza breaks inside each chapter  # 'word- word': this transcription types the dialogue dash as a hyphen
+DASH_HYPHENS = {'mamis-mkvleli'}  # 'word- word': this transcription types the dialogue dash as a hyphen
+# Poems in regular stanzas whose source drops or misplaces the breaks: lines per stanza (Argon's per-poem review).
+STANZAS = {'gandegili': 4, 'gogcha': 4, 'tornike-eristavi': 4, 'poeti': 4, 'tamar-mepis-sakhe-betaniis-eklesiashi': 6,
+           'tano-tatano': 10}
+# Layout slips and apparatus in the source HTML (no change to the work's text): (wrong, right), each found exactly once.
+LAYOUT = {
+    'achrdili': [('სცნობ,— <br />\n<br />\n”თვით', 'სცნობ,— <br />\n”თვით')],  # II's last line split off
+    'gabaaseba-teimurazisa-da-rustvelisa': [('<br />\n213 ოთხი', '<br />\nოთხი')],  # a stanza number glued on
+    'glakhis-naambobi': [('<p><br />\nპირვანდელი ვარიანტი მოთხრობისა “გლახის ნაამბობი” შესრულებულია 1859 წელს; ხოლო ბოლო '
+                          'რედაქცია ეკუთვნის: I — VI თავები 1862 წელს, VII — XII თავები 1872 — 1873 წლებს. რედ.\n</p>', '')],  # editor's note
+    'irines-bedniereba': [('<p>ირინეს ბედნიერება <br />\nსურათი სოფლის ცხოვრებიდან ორ მოქმედებად <br />\nმოქმედნი პირნი <br />',
+                           '<p>სურათი სოფლის ცხოვრებიდან ორ მოქმედებად <br />\n<br />\nმოქმედნი პირნი <br />')],  # title repeated
+    'tano-tatano': [('დანაცარებო!<br />\n<br />\nბესარიონ გაბაშვილი (ბესიკი)<br />', 'დანაცარებო!<br />')],  # signature
+}
 LEGACY = str.maketrans('ÀÁÂÃÄÅÆÈÉÊËÌÍÏÐÑÒÓÔÖ×ØÙÚÛÜÝÞßàáãä', 'აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ')
 
 
@@ -132,6 +144,9 @@ def main():
             html = FIXUPS[w['id']](html)
         if w['id'] in DASH_HYPHENS:
             html = re.sub(r'(?<=[ა-ჰ])- (?=[ა-ჰ"„])', ' — ', html)
+        for wrong, right in LAYOUT.get(w['id'], []):
+            assert html.count(wrong) == 1, (w['id'], wrong, html.count(wrong))
+            html = html.replace(wrong, right)
         corrections = []
         for wrong, right in CORRECTIONS.get(w['id'], []):
             assert html.count(wrong) == 1, (w['id'], wrong, html.count(wrong))
@@ -146,7 +161,7 @@ def main():
         source['retrieved'] = retrieved
         meta = {'id': w['id'], 'title': w['title'], 'author': w['author'], 'death_year': w['death_year'],
                 'genre': w['genre'], 'shelf': w['shelf'], 'lang': 'ka', 'source': source, 'corrections': corrections,
-                'quatrains': w['id'] in QUATRAINS}
+                'stanza_lines': STANZAS.get(w['id'])}
         md, _ = convert(html, meta, corpus - typo.vocabulary([texts.get(w['id'], '')]))
         record = {'source': 'Georgian Wikisource', 'page': ws['page'], **{k: v for k, v in source.items() if k in ('url', 'revision', 'parts')},
                   'retrieved': retrieved, 'transcription_license': 'CC BY-SA 4.0',

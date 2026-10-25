@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "კაი ყმა",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=73828",
+  "revision": 73828,
+  "retrieved": "2026-10-26",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "a42952ecadb2082252701f5fdf116864f8b0c7c4a613b45fe2f205955de9d1a5",
+  "sha256_md": "1e010c81a10d86dfd56cabced7dd7829d68bdc13a12b0ea2e282701765f27fa2"
+}

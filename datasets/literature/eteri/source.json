@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "ეთერი",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=73245",
+  "revision": 73245,
+  "retrieved": "2026-10-26",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "60c5cb5af43cb0e88d2c7cb197322f90f6b746330ba24d765f340206a0cc692b",
+  "sha256_md": "5c8152873ce0d5517ef6aaf3be488832fb8589a0627b3885627269f32fac4b43"
+}

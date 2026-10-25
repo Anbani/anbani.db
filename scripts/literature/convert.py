@@ -305,12 +305,44 @@ def split_numbered(blocks):
     return out
 
 
-def tidy(blocks, title, verse_shelf, play=False, quatrains=False):
+def restanza(blocks, n):
+    """A poem in n-line stanzas: each run of stanza blocks between headings is re-cut into n-line stanzas when its
+    lines add up (one line left over, a subtitle or a date, stands alone)."""
+    out, run = [], []
+
+    def flush():
+        lines = [l for b in run for l in b[1]]
+        extra = len(lines) % n
+        if lines and extra in (0, 1) and len(lines) > n:
+            head = tail = []
+            if extra:  # the leftover: a line standing alone at an end, else one with a digit (a date), else the first
+                alone = [len(run[0][1]) == 1, len(run[-1][1]) == 1]
+                if alone[1] and not alone[0] or alone == [False, False] and re.search(r'\d', lines[-1]) and \
+                        not re.search(r'\d', lines[0]):
+                    lines, tail = lines[:-1], [('stanza', lines[-1:])]
+                else:
+                    head, lines = [('stanza', lines[:1])], lines[1:]
+            out.extend(head + [('stanza', lines[i:i + n]) for i in range(0, len(lines), n)] + tail)
+        else:  # block by block
+            out.extend(x for b in run for x in ([('stanza', b[1][i:i + n]) for i in range(0, len(b[1]), n)]
+                                                if len(b[1]) > n and len(b[1]) % n == 0 else [b]))
+        run.clear()
+
+    for b in blocks:
+        if b[0] == 'stanza' and not (len(b[1]) == 1 and NUMBERED.match(b[1][0].strip('*'))):
+            run.append(b)
+        else:
+            flush()
+            out.append(b)
+    flush()
+    return out
+
+
+def tidy(blocks, title, verse_shelf, play=False, stanza_lines=None):
     out = []
     blocks = split_numbered(blocks)
-    if quatrains:  # a poem in quatrains whose source drops the stanza breaks
-        blocks = [x for b in blocks for x in ([(b[0], b[1][i:i + 4]) for i in range(0, len(b[1]), 4)]
-                                              if b[0] == 'stanza' and len(b[1]) > 4 and len(b[1]) % 4 == 0 else [b])]
+    if stanza_lines:
+        blocks = restanza(blocks, stanza_lines)
     for b in blocks:
         if b[0] in ('para', 'stanza'):
             lines = [l for l in b[1] if l and not CREDIT.match(l)]
@@ -411,7 +443,7 @@ def convert(html, meta, vocab=None):
     w.feed(html)
     verse = meta['shelf'] == 'პოეზია'
     blocks = tidy(blocks_of(lines_of(w.tokens), verse), meta["title"], verse, meta["genre"] == "პიესა",
-                  meta.get('quatrains', False))
+                  meta.get('stanza_lines'))
     blocks = [(b[0], [typo.dehyphen(l, vocab, b[0] == 'para') for l in b[1]]) if b[0] in ('para', 'stanza') else b
               for b in blocks]
     blocks, notes = typo.apply(blocks, w.notes)

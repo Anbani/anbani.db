@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "რამდენიმე სურათი ანუ ეპიზოდი ყაჩაღის ცხოვრებიდამ",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=75020",
+  "revision": 75020,
+  "retrieved": "2026-10-26",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "98bd6de46ebf52e62640e6359d200780a17431741295360ae93fc1c5a8ddb81f",
+  "sha256_md": "aaa61f8ec3d214803d96b1a5ac0f512825cbea02effef042574eb80205f3bdf8"
+}

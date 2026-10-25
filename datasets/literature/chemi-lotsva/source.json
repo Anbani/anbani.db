@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "ჩემი ლოცვა (ნიკოლოზ ბარათაშვილი)",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=75855",
+  "revision": 75855,
+  "retrieved": "2026-10-26",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "eb1aa6cbe33666fe2b8dbe449cc995d8dea8ddf135fafb3b7ad4b4423ad9e8f3",
+  "sha256_md": "1cdb8bb6ba485b971b1461c22c4f77e908d413f361a6825a391c130d23ca4f54"
+}

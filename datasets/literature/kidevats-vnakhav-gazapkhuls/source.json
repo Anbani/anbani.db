@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "კიდევაც ვნახავ გაზაფხულს",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=73914",
+  "revision": 73914,
+  "retrieved": "2026-10-26",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "e485dc9090a69ff7caf0b5ca5317f843625fb0a57d34d67340d69f99d7acc7b6",
+  "sha256_md": "78c5d4bc2808f1f2e0d66f5decdd3ee65a7186df4cdcd4f2b64fbf2f015aed5c"
+}

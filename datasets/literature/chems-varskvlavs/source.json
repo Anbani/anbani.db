@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "ჩემს ვარსკვლავს",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=75871",
+  "revision": 75871,
+  "retrieved": "2026-10-26",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "bc3f930efabea07354452e03992455c419dec5c3b418b6a9e6e01d28591330f0",
+  "sha256_md": "747b388407541a407b959bbc7f714808c1ea752f436cfddf67f119e3f8242477"
+}

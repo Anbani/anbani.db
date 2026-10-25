@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "ქართვლის დედა",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=75505",
+  "revision": 75505,
+  "retrieved": "2026-10-26",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "0bc5ed9bc9dea41a94c1312730b81460b3e326b707fe8bfbf98afca1fe291174",
+  "sha256_md": "ddbb532e97c9aaf156e63bb95af8f8b377a9b83709f6a6a3cd2c3ed8e20feb2b"
+}

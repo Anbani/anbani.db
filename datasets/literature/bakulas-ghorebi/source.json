@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "ბაკულას ღორები",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=72712",
+  "revision": 72712,
+  "retrieved": "2026-10-26",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "6d907ad70e10891f9f7088e12382897cf29786004a517c114d6b2becb7277640",
+  "sha256_md": "f996f5ab05c58caf180ed8733d1b143f0f73942bcde8c5d87e3930b3468cc4ae"
+}

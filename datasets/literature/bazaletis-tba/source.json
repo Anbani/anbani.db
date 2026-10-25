@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "ბაზალეთის ტბა",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=72703",
+  "revision": 72703,
+  "retrieved": "2026-10-26",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "b6acaab9d9344e20c658a2bf8a9ddcfb345c1fbfb9777619fa1a5b4763591f29",
+  "sha256_md": "079550c00fd3672de03103b8c77acb7f362562bf90919be7f5247a28c7cadce3"
+}

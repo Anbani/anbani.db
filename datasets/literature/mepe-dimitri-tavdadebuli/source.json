@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "მეფე დიმიტრი თავდადებული",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=74395",
+  "revision": 74395,
+  "retrieved": "2026-10-26",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "e93e1ca645ec0ef05baecbb0fe1ef8e741db9cc0655d1ec94d2358c0171675f8",
+  "sha256_md": "60a7276f3f7d67756d90b748c1cf3656f843f14c16f44111860e4dc154c511b8"
+}

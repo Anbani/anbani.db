@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "მე ყაჩაღებმა მომკლეს არაგვზე",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=77815",
+  "revision": 77815,
+  "retrieved": "2026-10-26",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "84891cb64b498398814c3655af8b1342d03419092aab9bd9abd728aca39c7da3",
+  "sha256_md": "4cf567f087f8c3c46d1108bf0cfd1de88792773b2908cf5232708dfda27ed827"
+}

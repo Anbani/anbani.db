@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "საღამო გამოსალმებისა",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=75180",
+  "revision": 75180,
+  "retrieved": "2026-10-26",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "54985561d4de54ff8db5058304635a7ae4a002b55a4796cf3053fce387761825",
+  "sha256_md": "5c351d6208806c3ccf1d59b30e12ced01f6d91305b2a57796376b479d2eb08e5"
+}
