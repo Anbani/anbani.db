@@ -5,5 +5,6 @@
   "revision": 74859,
   "retrieved": "2026-07-11",
   "transcription_license": "CC BY-SA 4.0",
-  "sha256": "50427ffa6aeb66958d2d4558478ba16c1bcc58408f0262c708bcb4856660b2e9"
+  "sha256": "68dda41674a455adb2390bb350743be40583deb027c7981121bc0ac89f19610c",
+  "corrections": "2026-10-25: typography and OCR fixes over the Wikisource revision: spaces after punctuation, none before; spaced hyphens and dialogue hyphens as dashes; stray characters; legacy-font footnotes decoded (anbani.db git log)"
 }
