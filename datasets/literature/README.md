@@ -3,7 +3,8 @@
 Public-domain Georgian prose and poetry (Georgia: author died 70+ years ago), one directory per work.
 `manifest.json` lists every work: `ready` texts, and the rest of the top-100 canon ([top100/](top100/README.md)):
 `source-needed`, `transcription-needed`, `copyright` (`public_domain_year`). `top100_rank`: place in the top 100;
-`rank`: 101+ for the public-domain works ranked after it (`top100/ranking-101.tsv`).
+`rank`: 101+ for the public-domain works ranked after it (`top100/ranking-101.tsv`). `layout_check`: a poem whose
+stanza breaks Argon could not settle from the transcription (needs a printed edition).
 
 ## Per work
 

@@ -301,7 +301,8 @@
     "page": "ბედი ქართლისა",
     "revision": 72755
    },
-   "top100_rank": 23
+   "top100_rank": 23,
+   "layout_check": "Canto I splits couplets across odd-line blocks ([5, 5, 9, 11])"
   },
   {
    "id": "mgzavris-tserilebi",
@@ -357,7 +358,8 @@
     "page": "ფიქრნი მტკვრის პირას",
     "revision": 75441
    },
-   "top100_rank": 24
+   "top100_rank": 24,
+   "layout_check": "a 7-line block in a couplet poem (canonical 6, 4, 6, 6, 6, 2, 2)"
   },
   {
    "id": "shemoghameba-mtatsmindazed",
@@ -785,7 +787,8 @@
     "page": "კრწანისის ყაყაჩოები",
     "revision": 73964
    },
-   "top100_rank": 86
+   "top100_rank": 86,
+   "layout_check": "one 13-line block of irregular units (2+2+3+4+2)"
   },
   {
    "id": "elguja",
@@ -1636,7 +1639,8 @@
     "page": "რამდენიმე სურათი ანუ ეპიზოდი ყაჩაღის ცხოვრებიდამ",
     "revision": 75020
    },
-   "rank": 105
+   "rank": 105,
+   "layout_check": "paragraph and song breaks lost inside long blocks"
   },
   {
    "id": "bazaletis-tba",
@@ -1832,7 +1836,8 @@
     "page": "ქართვლის დედა",
     "revision": 75505
    },
-   "rank": 139
+   "rank": 139,
+   "layout_check": "stage directions and speaker heading glued into verse blocks"
   },
   {
    "id": "patara-kakhi",
@@ -1888,7 +1893,8 @@
     "page": "პასუხი შვილთა",
     "revision": 74926
    },
-   "rank": 147
+   "rank": 147,
+   "layout_check": "two 13-line blocks in a poem of 3-line units"
   },
   {
    "id": "chemi-lotsva",
@@ -1944,7 +1950,8 @@
     "page": "ღამე მთაში",
     "revision": 75624
    },
-   "rank": 155
+   "rank": 155,
+   "layout_check": "66 lines as one block; edition may have paragraph breaks"
   },
   {
    "id": "eteri",
@@ -2042,7 +2049,8 @@
     "page": "საღამო გამოსალმებისა",
     "revision": 75180
    },
-   "rank": 168
+   "rank": 168,
+   "layout_check": "last break lost; four 16-syllable lines wrapped in two"
   },
   {
    "id": "mukhambazi",
