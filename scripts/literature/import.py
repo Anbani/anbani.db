@@ -30,7 +30,8 @@ CORRECTIONS = {
 DASH_HYPHENS = {'mamis-mkvleli'}  # 'word- word': this transcription types the dialogue dash as a hyphen
 # Poems in regular stanzas whose source drops or misplaces the breaks: lines per stanza (Argon's per-poem review).
 STANZAS = {'gandegili': 4, 'gogcha': 4, 'tornike-eristavi': 4, 'poeti': 4, 'tamar-mepis-sakhe-betaniis-eklesiashi': 6,
-           'tano-tatano': 10}
+           'tano-tatano': 10, 'bazaletis-tba': 4, 'saqure': 6}
+TURNS = {'lambalo-da-qasha'}  # one scanned paragraph; '_' starts each dialogue turn: a paragraph per turn
 # Layout slips and apparatus in the source HTML (no change to the work's text): (wrong, right), each found exactly once.
 LAYOUT = {
     'achrdili': [('სცნობ,— <br />\n<br />\n”თვით', 'სცნობ,— <br />\n”თვით')],  # II's last line split off
@@ -140,8 +141,11 @@ def main():
         start = re.search(r'<h2[^>]*>(?:<span[^>]*></span>)?ტექსტი</h2>', html)
         if start:  # a 'ტექსტი' section: what precedes it is the page's apparatus (series box, editions, links)
             html = html[start.end():]
+        html = re.sub(r'<b>\[\d{1,4}\]</b> ?', '', html)  # the printed edition's page numbers, bold in brackets
         if w['id'] in FIXUPS:
             html = FIXUPS[w['id']](html)
+        if w['id'] in TURNS:
+            html = re.sub(r'(?<=[.!?…»“"–—-])\s+_\s', '\n</p><p>_ ', html)
         if w['id'] in DASH_HYPHENS:
             html = re.sub(r'(?<=[ა-ჰ])- (?=[ა-ჰ"„])', ' — ', html)
         for wrong, right in LAYOUT.get(w['id'], []):

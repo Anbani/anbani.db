@@ -2,7 +2,7 @@
 import unittest
 
 import typo
-from convert import convert, md2txt
+from convert import convert, md2txt, numbered_prose, restanza
 
 META = {'id': 't', 'title': 'ტ', 'author': 'ა', 'death_year': 1900, 'genre': 'ლექსი', 'shelf': 'პოეზია', 'lang': 'ka',
         'source': {'site': 'Georgian Wikisource', 'page': 'ტ', 'revision': 1}}
@@ -13,6 +13,9 @@ class Typo(unittest.TestCase):
         self.assertEqual(typo.typo('- სად ხარ,ჯაყო ?'), '— სად ხარ, ჯაყო?')
         self.assertEqual(typo.typo('ხელი, - დამდნარი'), 'ხელი, — დამდნარი')
         self.assertEqual(typo.typo('1858 - 1863 წ.'), '1858–1863 წ.')
+        self.assertEqual(typo.typo('_ შენდობა, მამაო! _ გაუშვირა'), '— შენდობა, მამაო! — გაუშვირა')
+        self.assertEqual(typo.typo('პატრიარქი ,, მარშიმუნი‘‘, და <<ძენი>>'), 'პატრიარქი „მარშიმუნი“, და «ძენი»')
+        self.assertEqual(typo.typo('ადგილებში,, თოვლების'), 'ადგილებში,, თოვლების')  # a stray comma, not a quote
 
     def test_dehyphen(self):
         vocab = {'რომელიც': 3, 'მეფე-დედოფალი': 1}
@@ -40,3 +43,20 @@ class Convert(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class Structure(unittest.TestCase):
+    def test_restanza(self):
+        lines = list('აბგდევზთ')
+        out = restanza([('stanza', ['ქვესათაური'] + lines[:6]), ('stanza', lines[6:])], 4)  # subtitle glued on
+        self.assertEqual([b[1] for b in out], [['ქვესათაური'], lines[:4], lines[4:]])
+        out = restanza([('stanza', lines), ('stanza', ['1883 წ.'])], 4)  # a date standing alone stays last
+        self.assertEqual([b[1] for b in out], [lines[:4], lines[4:], ['1883 წ.']])
+
+    def test_numbered_prose(self):
+        p = lambda *ls: ('para', list(ls))
+        chapters = [p('1'), p('ა.'), p('2'), p('ბ.'), p('3'), p('გ.'), p('2'), p('ბ. უფრო გრძელი.')]
+        self.assertEqual(numbered_prose(chapters), [('h', 3, '1'), p('ა.'), ('h', 3, '2'), p('ბ. უფრო გრძელი.'),
+                                                    ('h', 3, '3'), p('გ.')])
+        pages = [p('სიტყვა'), p('628'), p('მაინც თქვა.'), p('629'), p('— კი.'), p('630'), p('ბოლო.')]
+        self.assertEqual(numbered_prose(pages), [p('სიტყვა მაინც თქვა.'), p('— კი.'), p('ბოლო.')])

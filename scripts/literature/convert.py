@@ -338,9 +338,52 @@ def restanza(blocks, n):
     return out
 
 
+def numbered_prose(blocks):
+    """Prose with bare arabic numbers as paragraphs: from 1 or 2 up, chapter numbers (headings; a chapter the source
+    repeats keeps its longest copy); from far above, the scan's page numbers (dropped, the paragraph they cut rejoined)."""
+    num = lambda b: b[0] == 'para' and len(b[1]) == 1 and re.fullmatch(r'\d{1,4}', b[1][0].strip(' *'))
+    nums = [int(b[1][0].strip(' *')) for b in blocks if num(b)]
+    if len(nums) < 3:
+        return blocks
+    if min(nums) <= 2:
+        chapters, order, cur = {}, [], None
+        head = []
+        for b in blocks:
+            if num(b):
+                cur = b[1][0].strip(' *')
+                if cur not in chapters:
+                    order.append(cur)
+                    chapters[cur] = []
+                chapters[cur].append([])
+            elif cur is None:
+                head.append(b)
+            else:
+                chapters[cur][-1].append(b)
+        out = head
+        for n in order:
+            out.append(('h', 3, n))
+            out.extend(max(chapters[n], key=lambda body: sum(len(' '.join(x[1])) for x in body if x[0] == 'para')))
+        return out
+    if min(nums) > 20:
+        out, glue = [], False
+        for b in blocks:
+            if num(b):
+                glue = bool(out) and out[-1][0] == 'para' and not re.search(r'[.!?…»"”:]$', out[-1][1][-1])
+                continue
+            if glue and b[0] == 'para':
+                out[-1] = ('para', out[-1][1][:-1] + [out[-1][1][-1] + ' ' + b[1][0]] + b[1][1:])
+            else:
+                out.append(b)
+            glue = False
+        return out
+    return blocks
+
+
 def tidy(blocks, title, verse_shelf, play=False, stanza_lines=None):
     out = []
     blocks = split_numbered(blocks)
+    if not verse_shelf:
+        blocks = numbered_prose(blocks)
     if stanza_lines:
         blocks = restanza(blocks, stanza_lines)
     for b in blocks:
