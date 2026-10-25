@@ -209,7 +209,7 @@
    "death_year": 1792,
    "status": "transcription-needed",
    "source": "https://www.nplg.gov.ge/ebooks/authors/david_guramishvili/davitian.pdf",
-   "reason": "Institutional scan found; Wikisource page contains only the collection contents.",
+   "reason": "Institutional scan found; Wikisource page contains only the collection contents. Also in George's Drive book collection.",
    "top100_rank": 6
   },
   {
@@ -979,8 +979,8 @@
    "death_year": 960,
    "shelf": "პროზა",
    "genre": "ჰაგიოგრაფია",
-   "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "status": "transcription-needed",
+   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe.",
    "top100_rank": 14
   },
   {
@@ -1001,8 +1001,8 @@
    "death_year": 990,
    "shelf": "პოეზია",
    "genre": "ჰიმნოგრაფია",
-   "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "status": "transcription-needed",
+   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe.",
    "top100_rank": 25
   },
   {
@@ -1034,8 +1034,8 @@
    "death_year": 1883,
    "shelf": "პოეზია",
    "genre": "პოემა",
-   "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "status": "transcription-needed",
+   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe.",
    "top100_rank": 41
   },
   {
@@ -1045,8 +1045,8 @@
    "death_year": 1864,
    "shelf": "პროზა",
    "genre": "პიესა",
-   "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "status": "transcription-needed",
+   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe.",
    "top100_rank": 52
   },
   {
@@ -1067,8 +1067,8 @@
    "death_year": 1210,
    "shelf": "პოეზია",
    "genre": "ოდა",
-   "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "status": "transcription-needed",
+   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe.",
    "top100_rank": 56
   },
   {
@@ -1133,8 +1133,8 @@
    "death_year": 1846,
    "shelf": "პოეზია",
    "genre": "ლექსი",
-   "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "status": "transcription-needed",
+   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe.",
    "top100_rank": 65
   },
   {
@@ -1144,8 +1144,8 @@
    "death_year": 1937,
    "shelf": "პოეზია",
    "genre": "ლექსი",
-   "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "status": "transcription-needed",
+   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe.",
    "top100_rank": 84
   },
   {
@@ -1155,8 +1155,8 @@
    "death_year": 1944,
    "shelf": "პოეზია",
    "genre": "ლექსი",
-   "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "status": "transcription-needed",
+   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe.",
    "top100_rank": 89
   },
   {
@@ -1166,8 +1166,8 @@
    "death_year": 1220,
    "shelf": "პოეზია",
    "genre": "ოდა",
-   "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS."
+   "status": "transcription-needed",
+   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe."
   },
   {
    "id": "pirveli-nabiji",
@@ -1196,8 +1196,8 @@
    "death_year": 1937,
    "shelf": "პროზა",
    "genre": "რომანი",
-   "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS."
+   "status": "transcription-needed",
+   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe."
   },
   {
    "id": "eshmakis-kva",
