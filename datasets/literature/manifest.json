@@ -107,7 +107,7 @@
    "author": "მიხეილ ჯავახიშვილი",
    "death_year": 1937,
    "status": "source-needed",
-   "reason": "Wikisource index entry is a red link; no reusable full transcription was found.",
+   "reason": "Wikisource index entry is a red link; no reusable full transcription was found. NPLG school archive (Wayback, checked 2026-10-26): not there.",
    "top100_rank": 41,
    "shelf": "პროზა",
    "genre": "რომანი"
@@ -214,7 +214,7 @@
    "death_year": 1792,
    "status": "transcription-needed",
    "source": "https://www.nplg.gov.ge/ebooks/authors/david_guramishvili/davitian.pdf",
-   "reason": "Institutional scan found; Wikisource page contains only the collection contents. Also in George's Drive book collection.",
+   "reason": "Institutional scan found; Wikisource page contains only the collection contents. Also in George's Drive book collection. NPLG school archive (Wayback, checked 2026-10-26) has only N. Natadze's essay on it.",
    "top100_rank": 5,
    "shelf": "პოეზია",
    "genre": "პოემა"
@@ -523,7 +523,7 @@
    "shelf": "პროზა",
    "genre": "რომანი",
    "status": "source-needed",
-   "reason": "Wikisource page is an index of parts with no text.",
+   "reason": "Wikisource page is an index of parts with no text. NPLG school archive (Wayback, checked 2026-10-26): not there.",
    "top100_rank": 97
   },
   {
@@ -991,7 +991,7 @@
    "shelf": "პოეზია",
    "genre": "ლექსი",
    "status": "source-needed",
-   "reason": "Wikisource page of this title is an essay, not the poem cycle."
+   "reason": "Wikisource page of this title is an essay, not the poem cycle. NPLG school archive (Wayback, checked 2026-10-26): not there."
   },
   {
    "id": "grigol-khandztelis-tskhovreba",
@@ -1001,7 +1001,7 @@
    "shelf": "პროზა",
    "genre": "ჰაგიოგრაფია",
    "status": "transcription-needed",
-   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe.",
+   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe. NPLG school archive (Wayback, checked 2026-10-26): not there.",
    "top100_rank": 14
   },
   {
@@ -1011,9 +1011,21 @@
    "death_year": 790,
    "shelf": "პროზა",
    "genre": "ჰაგიოგრაფია",
-   "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
-   "top100_rank": 28
+   "status": "ready",
+   "top100_rank": 28,
+   "nplg": {
+    "page": "abos_wameba.htm",
+    "snapshot": "20220828213417",
+    "start": "შესავალი",
+    "end": "აწ ვევედრებით ყოველნი",
+    "drop": [
+     "შესავალი თავი I თავი II",
+     "შესავალი - II",
+     "თავი I - III",
+     "თავი II - IV",
+     "თავი III - სარჩევი"
+    ]
+   }
   },
   {
    "id": "keba-da-dideba-kartulisa-enisa",
@@ -1022,9 +1034,14 @@
    "death_year": 990,
    "shelf": "პოეზია",
    "genre": "ჰიმნოგრაფია",
-   "status": "transcription-needed",
-   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe.",
-   "top100_rank": 33
+   "status": "ready",
+   "top100_rank": 33,
+   "nplg": {
+    "page": "qebai_da_didebai.htm",
+    "snapshot": "20220828213154",
+    "start": "დამარხულ არს ენაჲ",
+    "end": "და ესე ყოველი, რომელი წერილ არს"
+   }
   },
   {
    "id": "kvachi-kvachantiradze",
@@ -1034,7 +1051,7 @@
    "shelf": "პროზა",
    "genre": "რომანი",
    "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS. NPLG school archive (Wayback, checked 2026-10-26): not there.",
    "top100_rank": 26
   },
   {
@@ -1045,7 +1062,7 @@
    "shelf": "პოეზია",
    "genre": "პოემა",
    "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS. NPLG school archive (Wayback, checked 2026-10-26): not there.",
    "top100_rank": 51
   },
   {
@@ -1056,7 +1073,7 @@
    "shelf": "პოეზია",
    "genre": "პოემა",
    "status": "transcription-needed",
-   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe.",
+   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe. NPLG school archive (Wayback, checked 2026-10-26): not there.",
    "top100_rank": 60
   },
   {
@@ -1067,7 +1084,7 @@
    "shelf": "პროზა",
    "genre": "პიესა",
    "status": "transcription-needed",
-   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe.",
+   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe. NPLG school archive (Wayback, checked 2026-10-26): not there.",
    "top100_rank": 89
   },
   {
@@ -1078,7 +1095,7 @@
    "shelf": "პროზა",
    "genre": "რომანი",
    "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS. NPLG school archive (Wayback, checked 2026-10-26): not there.",
    "top100_rank": 55
   },
   {
@@ -1089,7 +1106,7 @@
    "shelf": "პოეზია",
    "genre": "ოდა",
    "status": "transcription-needed",
-   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe.",
+   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe. NPLG school archive (Wayback, checked 2026-10-26): not there.",
    "top100_rank": 72
   },
   {
@@ -1100,7 +1117,7 @@
    "shelf": "პროზა",
    "genre": "რომანი",
    "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS. NPLG school archive (Wayback, checked 2026-10-26): not there.",
    "top100_rank": 38
   },
   {
@@ -1111,7 +1128,7 @@
    "shelf": "პროზა",
    "genre": "რომანი",
    "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS. NPLG school archive (Wayback, checked 2026-10-26): not there.",
    "top100_rank": 59
   },
   {
@@ -1122,7 +1139,7 @@
    "shelf": "პოეზია",
    "genre": "ეპოსი",
    "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS. NPLG school archive (Wayback, checked 2026-10-26): not there.",
    "top100_rank": 43
   },
   {
@@ -1133,7 +1150,7 @@
    "shelf": "პოეზია",
    "genre": "ეპოსი",
    "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS. NPLG school archive (Wayback, checked 2026-10-26) has only a prose folk variant (ეთერისა და აბესალომის ამბავი, recorded by T. Razikashvili), not the verse epic.",
    "top100_rank": 67
   },
   {
@@ -1144,7 +1161,7 @@
    "shelf": "პოეზია",
    "genre": "პოემა",
    "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS. NPLG school archive (Wayback, checked 2026-10-26): not there.",
    "top100_rank": 87
   },
   {
@@ -1155,7 +1172,7 @@
    "shelf": "პოეზია",
    "genre": "ლექსი",
    "status": "transcription-needed",
-   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe.",
+   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe. NPLG school archive (Wayback, checked 2026-10-26): not there.",
    "top100_rank": 98
   },
   {
@@ -1165,9 +1182,15 @@
    "death_year": 1937,
    "shelf": "პოეზია",
    "genre": "ლექსი",
-   "status": "transcription-needed",
-   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe.",
-   "top100_rank": 78
+   "status": "ready",
+   "top100_rank": 78,
+   "nplg": {
+    "page": "darianuli.htm",
+    "snapshot": "20220805002248",
+    "start": "დაიტანჯა",
+    "end": "გადაგვარებით."
+   },
+   "layout_review": "kept as the source types it, one word per line (the poem's short internal-rhyme lines); Argon 2026-10-26: Iashvili printed short lines, exact breaks and stanzas unsure without the printed edition; needs a printed edition (no second transcription found)"
   },
   {
    "id": "nu-mtser",
@@ -1176,9 +1199,19 @@
    "death_year": 1944,
    "shelf": "პოეზია",
    "genre": "ლექსი",
-   "status": "transcription-needed",
-   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe.",
-   "top100_rank": 96
+   "status": "ready",
+   "top100_rank": 96,
+   "nplg": {
+    "page": "nu_mwer.htm",
+    "snapshot": "20220805002902",
+    "start": "ნუ მწერ, რომ ბაღში",
+    "end": "ბრძოლების შემდეგ",
+    "drop": [
+     "ორთაჭალა - ",
+     "მეტეხი - ",
+     "ხვითო - "
+    ]
+   }
   },
   {
    "id": "abdulmesiani",
@@ -1188,7 +1221,7 @@
    "shelf": "პოეზია",
    "genre": "ოდა",
    "status": "transcription-needed",
-   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe."
+   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe. NPLG school archive (Wayback, checked 2026-10-26): not there."
   },
   {
    "id": "pirveli-nabiji",
@@ -1198,7 +1231,7 @@
    "shelf": "პროზა",
    "genre": "მოთხრობა",
    "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS."
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS. NPLG school archive (Wayback, checked 2026-10-26): not there."
   },
   {
    "id": "samshoblo-khevsurisa",
@@ -1207,8 +1240,14 @@
    "death_year": 1901,
    "shelf": "პოეზია",
    "genre": "ლექსი",
-   "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS."
+   "status": "ready",
+   "nplg": {
+    "page": "samSoblo_xevsurisa.htm",
+    "snapshot": "20220828175051",
+    "start": "სადც ვშობილვარ",
+    "end": "10 მკათათვე"
+   },
+   "rank": 130
   },
   {
    "id": "tetri-saqelo",
@@ -1218,7 +1257,7 @@
    "shelf": "პროზა",
    "genre": "რომანი",
    "status": "transcription-needed",
-   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe."
+   "reason": "Not on Georgian Wikisource; a copy is in George's Drive book collection (top100/shortlist.tsv drive) to transcribe. NPLG school archive (Wayback, checked 2026-10-26): not there."
   },
   {
    "id": "eshmakis-kva",
@@ -1227,8 +1266,13 @@
    "death_year": 1937,
    "shelf": "პროზა",
    "genre": "მოთხრობა",
-   "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS."
+   "status": "ready",
+   "nplg": {
+    "page": "eSmakis_qva.htm",
+    "snapshot": "20220828213745",
+    "start": "ჩვენი საუბარი",
+    "end": "1908 წ"
+   }
   },
   {
    "id": "shelotsva-radioti",
@@ -1237,8 +1281,13 @@
    "death_year": 1944,
    "shelf": "პროზა",
    "genre": "მოთხრობა",
-   "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS."
+   "status": "ready",
+   "nplg": {
+    "page": "selocva_radioTi.htm",
+    "snapshot": "20220828213836",
+    "start": "რას მაქნევდით",
+    "end": "ელის ხომ უფრო შეეფერებოდა"
+   }
   },
   {
    "id": "tavsapriani-dedakatsi",
@@ -1247,8 +1296,13 @@
    "death_year": 1944,
    "shelf": "პროზა",
    "genre": "მოთხრობა",
-   "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS."
+   "status": "ready",
+   "nplg": {
+    "page": "tavsafriani_dedakaci.htm",
+    "snapshot": "20220805002438",
+    "start": "ვწერ შემთხვევით",
+    "end": "1925 წ"
+   }
   },
   {
    "id": "basiani",
@@ -1258,7 +1312,7 @@
    "shelf": "პოეზია",
    "genre": "ლექსი",
    "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS."
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS. NPLG school archive (Wayback, checked 2026-10-26): not there."
   },
   {
    "id": "sevdis-baghs-shevel",
@@ -1267,8 +1321,13 @@
    "death_year": 1791,
    "shelf": "პოეზია",
    "genre": "ლექსი",
-   "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS."
+   "status": "ready",
+   "nplg": {
+    "page": "sevdis_bars_sevel.htm",
+    "snapshot": "20220805003139",
+    "start": "სევდის ბაღს შეველ შენაღონები",
+    "end": "თავი მაქვს მისთვის შენაწონები"
+   }
   },
   {
    "id": "kidev-amodis-mze",
@@ -1278,7 +1337,7 @@
    "shelf": "პოეზია",
    "genre": "ლექსი",
    "status": "source-needed",
-   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS."
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS. NPLG school archive (Wayback, checked 2026-10-26): not there."
   },
   {
    "id": "didostatis-marjvena",

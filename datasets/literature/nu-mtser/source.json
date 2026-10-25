@@ -1,0 +1,11 @@
+{
+  "source": "NPLG, ბიბლიოთეკა სკოლას (Wayback snapshot)",
+  "page": "nu_mwer.htm",
+  "url": "https://web.archive.org/web/20220805002902id_/http://www.nplg.gov.ge/civil/statiebi/saskolo/nu_mwer.htm",
+  "snapshot": "20220805002902",
+  "retrieved": "2026-10-26",
+  "transcription_license": "not stated",
+  "converter": "scripts/literature/import.py",
+  "sha256": "9102f45dd22b2aa1409b7080429a846c5cd1c6a9ec9457fc97d156f68ebccb9c",
+  "sha256_md": "9bf0c63b9862d9e8875cbbcfcfa68cc4040752cabe66d8a308ae79a4a5799ed5"
+}

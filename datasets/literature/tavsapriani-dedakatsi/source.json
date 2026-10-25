@@ -1,0 +1,17 @@
+{
+  "source": "NPLG, ბიბლიოთეკა სკოლას (Wayback snapshot)",
+  "page": "tavsafriani_dedakaci.htm",
+  "url": "https://web.archive.org/web/20220805002438id_/http://www.nplg.gov.ge/civil/statiebi/saskolo/tavsafriani_dedakaci.htm",
+  "snapshot": "20220805002438",
+  "retrieved": "2026-10-26",
+  "transcription_license": "not stated",
+  "converter": "scripts/literature/import.py",
+  "corrections": [
+    "დანჟღრეული → დანჯღრეული",
+    "დადაკაცის → დედაკაცის",
+    "სურათაბეს... → სურათებს...",
+    "ათ შაურიანებს. → ათშაურიანებს."
+  ],
+  "sha256": "13b289547a6d91dd7b2cdd31d2bd05d0d2b264a927ab27bf0c05581760254ee5",
+  "sha256_md": "8468041d3cd83957aaf4b66cbb370f99729c02a2112ddfeb899adaa391f15be1"
+}

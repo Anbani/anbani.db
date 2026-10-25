@@ -1,0 +1,14 @@
+{
+  "source": "NPLG, ბიბლიოთეკა სკოლას (Wayback snapshot)",
+  "page": "sevdis_bars_sevel.htm",
+  "url": "https://web.archive.org/web/20220805003139id_/http://www.nplg.gov.ge/civil/statiebi/saskolo/sevdis_bars_sevel.htm",
+  "snapshot": "20220805003139",
+  "retrieved": "2026-10-26",
+  "transcription_license": "not stated",
+  "converter": "scripts/literature/import.py",
+  "corrections": [
+    "მყორცა → მტყორცა"
+  ],
+  "sha256": "43a700ebb53d44657466884f4beef1e211de2891358b5f8404addec4decc6a9b",
+  "sha256_md": "7007807528cee47f9b8abeec4d5da8f97e99009f8d585692a170148c2742dc29"
+}

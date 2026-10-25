@@ -11,7 +11,7 @@ An existing text.md is never overwritten without --force: after import, fixes go
 """
 import argparse, datetime, glob, hashlib, json, os, random, re, sys, time, urllib.parse, urllib.request
 
-import typo
+import nplg, typo
 from convert import convert, md2txt
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'datasets', 'literature')
@@ -38,9 +38,11 @@ CORRECTIONS = {
                          ('ყრილიFფალავანი', 'ყრილი ფალავანი')],
 }
 DASH_HYPHENS = {'mamis-mkvleli'}  # 'word- word': this transcription types the dialogue dash as a hyphen
-# Poems in regular stanzas whose source drops or misplaces the breaks: lines per stanza (Argon's per-poem review).
+# Poems in regular stanzas whose source drops or misplaces the breaks: lines per stanza (Argon's per-poem review); a
+# list: an irregular poem's own sizes in order (samshoblo: 3 lines + the 2-line refrain, last 2 + 2, then the date).
 STANZAS = {'gandegili': 4, 'gogcha': 4, 'tornike-eristavi': 4, 'poeti': 4, 'tamar-mepis-sakhe-betaniis-eklesiashi': 6,
-           'tano-tatano': 10, 'bazaletis-tba': 4, 'saqure': 6}
+           'tano-tatano': 10, 'bazaletis-tba': 4, 'saqure': 6, 'nu-mtser': 4,
+           'samshoblo-khevsurisa': [5, 5, 5, 5, 4, 1]}
 TURNS = {'lambalo-da-qasha'}  # one scanned paragraph; '_' starts each dialogue turn: a paragraph per turn
 # Layout slips and apparatus in the source HTML (no change to the work's text): (wrong, right), each found exactly once.
 LAYOUT = {
@@ -92,6 +94,11 @@ def fix_bedi(h):
     return h[:m.start()] + h[m.end():] + f'<ol class="references"><li>{m.group(1) + m.group(2)}</li></ol>'
 
 
+WRAPS = {}  # printed line-end hyphens the corpus could not settle: work -> [(token, joined)]
+for _row in open(os.path.join(FIXES, 'wraps.tsv'), encoding='utf-8').read().splitlines()[1:]:
+    _w, _t, _j = _row.split('\t')[:3]
+    WRAPS.setdefault(_w, []).append((_t, _j))
+
 FIXUPS = {'khevisberi-gocha': fix_khevisberi, 'kacia-adamiani': fix_kacia, 'bedi-kartlisa': fix_bedi}
 
 
@@ -117,6 +124,25 @@ def parse(page, revision, cache_file):
     return data['parse']['text']
 
 
+def fetch_page(u, cache_file):
+    """A plain page (an archived snapshot is fixed, so the URL is the pin); cached as fetched."""
+    if cache_file and os.path.exists(cache_file):
+        return open(cache_file, encoding='utf-8', errors='replace').read()
+    for attempt in range(4):
+        time.sleep(random.uniform(0.8, 1.8))
+        try:
+            with urllib.request.urlopen(urllib.request.Request(u, headers={'User-Agent': UA}), timeout=90) as r:
+                raw = r.read().decode('utf-8', errors='replace')
+            break
+        except OSError:
+            if attempt == 3:
+                raise
+            time.sleep(5 * (attempt + 1))
+    if cache_file:
+        open(cache_file, 'w', encoding='utf-8').write(raw)
+    return raw
+
+
 def sha(s):
     return hashlib.sha256(s.encode('utf-8')).hexdigest()
 
@@ -140,7 +166,7 @@ def main():
     ap.add_argument('--derive', action='store_true')
     a = ap.parse_args()
     works = [w for w in json.load(open(os.path.join(ROOT, 'manifest.json'), encoding='utf-8'))['works']
-             if w.get('wikisource') and (not a.ids or w['id'] in a.ids)]
+             if (w.get('wikisource') or w.get('nplg')) and (not a.ids or w['id'] in a.ids)]
     if a.derive:
         for w in works:
             src = os.path.join(ROOT, w['id'], 'source.json')
@@ -150,12 +176,15 @@ def main():
     texts = {f.split(os.sep)[-2]: open(f, encoding='utf-8').read() for f in glob.glob(os.path.join(ROOT, '*', 'text.txt'))}
     corpus = typo.vocabulary(texts.values())
     for w in works:
-        d, ws = os.path.join(ROOT, w['id']), w['wikisource']
+        d, ws = os.path.join(ROOT, w['id']), w.get('wikisource')
         if os.path.exists(os.path.join(d, 'text.md')) and not a.force:
             continue
         old = json.load(open(os.path.join(d, 'source.json'), encoding='utf-8')) if os.path.exists(os.path.join(d, 'source.json')) else {}
         cache = lambda suffix: a.cache and os.path.join(a.cache, f"{w['id']}{suffix}.json")
-        if ws.get('parts'):  # a work split into subpages: chapters in order, each under its heading
+        if w.get('nplg'):  # the National Library's school page, from its Wayback snapshot
+            raw = fetch_page(nplg.url(w['nplg']), a.cache and os.path.join(a.cache, w['id'] + '.htm'))
+            html = nplg.work_html(raw, w['nplg'], w['shelf'] == 'პოეზია')
+        elif ws.get('parts'):  # a work split into subpages: chapters in order, each under its heading
             html = ''.join(f"<h2>{p['page'].rsplit('/', 1)[1]}</h2>" + parse(p['page'], p['revision'], cache(f'.{i}'))
                            for i, p in enumerate(ws['parts']))
         else:
@@ -189,18 +218,26 @@ def main():
                 html = re.sub(pat, lambda m: right, html)
                 corrections.append(f'{wrong} → {right}')
         retrieved = old.get('retrieved') or datetime.date.today().isoformat()
-        source = {'site': 'Georgian Wikisource', 'page': ws['page']}
-        if ws.get('parts'):
-            source['parts'] = ws['parts']
+        if w.get('nplg'):
+            source = {'site': 'NPLG, ბიბლიოთეკა სკოლას (Wayback snapshot)', 'page': w['nplg']['page'],
+                      'url': nplg.url(w['nplg']), 'snapshot': w['nplg']['snapshot']}
         else:
+            source = {'site': 'Georgian Wikisource', 'page': ws['page']}
+        if ws and ws.get('parts'):
+            source['parts'] = ws['parts']
+        elif ws:
             source.update(url=f"https://ka.wikisource.org/w/index.php?oldid={ws['revision']}", revision=ws['revision'])
         source['retrieved'] = retrieved
+        licence = 'not stated by the NPLG page (the work is public domain)' if w.get('nplg') else 'CC BY-SA 4.0, Georgian Wikisource'
         meta = {'id': w['id'], 'title': w['title'], 'author': w['author'], 'death_year': w['death_year'],
                 'genre': w['genre'], 'shelf': w['shelf'], 'lang': 'ka', 'source': source, 'corrections': corrections,
+                'transcription': licence,
                 'stanza_lines': STANZAS.get(w['id'])}
+        meta['joins'] = WRAPS.get(w['id'], [])
         md, _ = convert(html, meta, corpus - typo.vocabulary([texts.get(w['id'], '')]))
-        record = {'source': 'Georgian Wikisource', 'page': ws['page'], **{k: v for k, v in source.items() if k in ('url', 'revision', 'parts')},
-                  'retrieved': retrieved, 'transcription_license': 'CC BY-SA 4.0',
+        record = {'source': source['site'], 'page': source['page'],
+                  **{k: v for k, v in source.items() if k in ('url', 'revision', 'parts', 'snapshot')},
+                  'retrieved': retrieved, 'transcription_license': 'CC BY-SA 4.0' if ws else 'not stated',
                   'converter': 'scripts/literature/import.py'}
         if corrections:
             record['corrections'] = corrections

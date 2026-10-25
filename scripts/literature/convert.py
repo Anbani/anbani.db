@@ -18,6 +18,8 @@ VOID = {'br', 'img', 'hr', 'wbr', 'meta', 'link', 'input', 'source'}
 DROP_TAGS = {'style', 'script', 'figure', 'table', 'sup', 'math', 'noscript'}
 DROP_CLASSES = {'mw-editsection', 'noprint', 'navbox', 'toc', 'metadata', 'sistersitebox', 'ws-noexport', 'mw-empty-elt',
                 'catlinks', 'printfooter', 'thumb', 'gallery', 'mw-cite-backlink'}
+# 'თავი II. ქართლად შემოსლვაჲ…' (a titled chapter), or a front or back section standing alone
+CHAPTER = re.compile(r'^(თავი|ნაწილი|კარი)\s+([IVXLCDM]+|\d+)\.\s+\S|^(შესავალი|წინასიტყვაობა|ბოლოსიტყვაობა|პროლოგი|ეპილოგი)$')
 TAIL = re.compile(r'^(რესურსები ინტერნეტში|სქოლიო|სქოლიოები|შენიშვნები|წყარო|წყაროები|ლიტერატურა|იხილეთ აგრეთვე)$')
 CREDIT = re.compile(r'^(გადამწერი|წყარო:|ტექსტი გადმოწერილია|თარგი:)')
 LONG = 110
@@ -323,7 +325,14 @@ def split_dividers(b):
 
 def restanza(blocks, n):
     """A poem in n-line stanzas: each run of stanza blocks between headings is re-cut into n-line stanzas when its
-    lines add up (one line left over, a subtitle or a date, stands alone)."""
+    lines add up (one line left over, a subtitle or a date, stands alone). n a list: the poem's own stanza sizes in
+    order (an irregular poem with no headings); its lines must add up exactly."""
+    if isinstance(n, list):
+        lines = [l for b in blocks for l in b[1]]
+        if any(b[0] != 'stanza' for b in blocks) or len(lines) != sum(n):
+            raise ValueError(f'stanza sizes {n} do not fit {len(lines)} lines')
+        cuts = [sum(n[:i]) for i in range(len(n) + 1)]
+        return [('stanza', lines[a:b]) for a, b in zip(cuts, cuts[1:])]
     out, run = [], []
 
     def flush():
@@ -418,7 +427,8 @@ def tidy(blocks, title, verse_shelf, play=False, stanza_lines=None):
                 if not lines:
                     continue
                 text = ' '.join(lines)
-            if len(lines) == 1 and NUMBERED.match(text.strip('*')) and len(text) <= 30:
+            if len(lines) == 1 and (NUMBERED.match(text.strip('*')) and len(text) <= 30 or
+                                    CHAPTER.match(text.strip('*')) and len(text) <= 120):
                 out.append(('h', 3, text.strip('*')))
                 continue
             if len(lines) > 1 and NUMBERED.match(lines[0].strip('*')) and len(lines[0]) <= 12:
@@ -473,7 +483,7 @@ def render(meta, blocks, notes):
     if meta.get('corrections'):
         fm += ['corrections:'] + [f'  - {q(c)}' for c in meta['corrections']]
     fm += ['license:', f'  work: {q("public domain in Georgia (author died %s)" % meta["death_year"])}',
-           f'  transcription: {q("CC BY-SA 4.0, Georgian Wikisource")}', '---', '', '']
+           f'  transcription: {q(meta.get("transcription", "CC BY-SA 4.0, Georgian Wikisource"))}', '---', '', '']
     md, txt = [], []
     rank = {lv: i + 1 for i, lv in enumerate(sorted({b[1] for b in blocks if b[0] == 'h'}))}  # top level -> '#'
     for b in blocks:
@@ -506,6 +516,9 @@ def convert(html, meta, vocab=None):
                   meta.get('stanza_lines'))
     blocks = [(b[0], [typo.dehyphen(l, vocab, b[0] == 'para') for l in b[1]]) if b[0] in ('para', 'stanza') else b
               for b in blocks]
+    for token, joined in meta.get('joins', []):  # broken words a proofread found: every occurrence, whole tokens only
+        pat = re.compile(r'(?<![ა-ჰ-])' + re.escape(token) + r'(?![ა-ჰ-])')
+        blocks = [(b[0], [pat.sub(joined, l) for l in b[1]]) if b[0] in ('para', 'stanza') else b for b in blocks]
     blocks, notes = typo.apply(blocks, w.notes)
     md, txt = render(meta, blocks, notes)
     assert md2txt(md) == txt, meta['id']  # text.txt is derivable from text.md alone

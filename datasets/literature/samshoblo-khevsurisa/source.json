@@ -1,0 +1,23 @@
+{
+  "source": "NPLG, ბიბლიოთეკა სკოლას (Wayback snapshot)",
+  "page": "samSoblo_xevsurisa.htm",
+  "url": "https://web.archive.org/web/20220828175051id_/http://www.nplg.gov.ge/civil/statiebi/saskolo/samSoblo_xevsurisa.htm",
+  "snapshot": "20220828175051",
+  "retrieved": "2026-10-26",
+  "transcription_license": "not stated",
+  "converter": "scripts/literature/import.py",
+  "corrections": [
+    "სადც → სადაც",
+    "სიყრმიყვე → სიყრმითვე",
+    "სალს → სალსა",
+    "იქთკენ → იქითკენ",
+    "არ გავცლი მე → არ გავცვლი მე",
+    "სამოტხეზედა → სამოთხეზედა",
+    "გავცლი → გავცვლი",
+    "მამა–პაპა → მამა-პაპა",
+    "თოვლიან–ყინულიანი → თოვლიან-ყინულიანი",
+    "მარილიანი…. → მარილიანი…"
+  ],
+  "sha256": "77ec9e6a62695ca80faa9d618f1ae54142577e7c858fe7d51134a28552d850b0",
+  "sha256_md": "c61275e1157fe9efbb519b9cd699589fc6aaff58e0b4049ed6e000af92ba3496"
+}

@@ -1,0 +1,16 @@
+{
+  "source": "NPLG, ბიბლიოთეკა სკოლას (Wayback snapshot)",
+  "page": "qebai_da_didebai.htm",
+  "url": "https://web.archive.org/web/20220828213154id_/http://www.nplg.gov.ge/civil/statiebi/saskolo/qebai_da_didebai.htm",
+  "snapshot": "20220828213154",
+  "retrieved": "2026-10-26",
+  "transcription_license": "not stated",
+  "converter": "scripts/literature/import.py",
+  "corrections": [
+    "ღმერთმა → ღმერთმან",
+    "რამეთუ \" წელი ათასი → რამეთუ \"წელი ათასი",
+    "უფლისაიჲთა → უფლისაჲთა"
+  ],
+  "sha256": "28f369f1a127a0c2d5a687874856af672a924c137a6b6c95dd0231607c6dce13",
+  "sha256_md": "5fc178dfa4f1aa6b9fc938aa48ed71644317617012528fd44599f434e8aa3f05"
+}

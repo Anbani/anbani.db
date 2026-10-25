@@ -53,6 +53,9 @@ class Structure(unittest.TestCase):
         self.assertEqual([b[1] for b in out], [['ქვესათაური'], lines[:4], lines[4:]])
         out = restanza([('stanza', lines), ('stanza', ['1883 წ.'])], 4)  # a date standing alone stays last
         self.assertEqual([b[1] for b in out], [lines[:4], lines[4:], ['1883 წ.']])
+        out = restanza([('stanza', lines)], [3, 5])  # the poem's own irregular sizes
+        self.assertEqual([b[1] for b in out], [lines[:3], lines[3:]])
+        self.assertRaises(ValueError, restanza, [('stanza', lines)], [4, 5])
 
     def test_numbered_prose(self):
         p = lambda *ls: ('para', list(ls))
