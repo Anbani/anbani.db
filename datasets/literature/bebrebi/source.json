@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "ბებრები",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=72753",
+  "revision": 72753,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "aeb0e0cc9ff3cc6a19813398f2eb368f9dec4a9eed8aca80a857763ceb3131dd",
+  "sha256_md": "fb8ca945d6f32e771488dccbb751c38aba4a238f2c85f03d2d9086ad30657af4"
+}

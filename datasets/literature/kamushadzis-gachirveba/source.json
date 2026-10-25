@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "ქამუშაძის გაჭირვება",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=75491",
+  "revision": 75491,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "bf6fd2a49f0bd3f44f6442e01d34199958e300de1b4fe879ae7ff53a510efbd7",
+  "sha256_md": "f0b12f480aa5de801c92e7e24cd7afa3a635acf627a0f02d27d928b4662cb1e3"
+}

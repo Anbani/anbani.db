@@ -1,10 +1,11 @@
 {
   "source": "Georgian Wikisource",
   "page": "MEMENTO MORI",
-  "url": "https://ka.wikisource.org/wiki/MEMENTO_MORI?oldid=72209",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=72209",
   "revision": 72209,
   "retrieved": "2026-07-11",
   "transcription_license": "CC BY-SA 4.0",
-  "sha256": "a5c3bb1ecc9afa52671dc69e6b728a2918d95ca5c834b86d16c3a4f260f6ffed",
-  "corrections": "2026-10-25: typography and OCR fixes over the Wikisource revision: spaces after punctuation, none before; spaced hyphens and dialogue hyphens as dashes; stray characters; legacy-font footnotes decoded (anbani.db git log)"
+  "converter": "scripts/literature/import.py",
+  "sha256": "923b63b359ab112646bedff30db1975ab57f38b146a56072449023124a4801b9",
+  "sha256_md": "5f2f6fe4faf350dd652af0da18242acae5c5106ccc923762719c2a491a81207f"
 }

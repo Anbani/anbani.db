@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "სოლომონ ისაკიჩ მეჯღანუაშვილი",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=75273",
+  "revision": 75273,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "914b6e6a723039902f639d8d916053049896402d3749195eb2b8c9a3c7e76eb5",
+  "sha256_md": "f44e70e1cb80e16713670229fe78c8adb77fa698bc58899d0e5ba2e0b97a395d"
+}

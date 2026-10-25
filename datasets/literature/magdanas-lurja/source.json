@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "მაგდანას ლურჯა",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=74049",
+  "revision": 74049,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "303290bb52fadf75326975b312318ceeca47ca70341707b2edc983e3cc52b883",
+  "sha256_md": "9a3647de4e2d377de3b2f1c94fedfa1d49d281b621b26f0029c023fae187a365"
+}

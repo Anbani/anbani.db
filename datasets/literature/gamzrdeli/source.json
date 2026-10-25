@@ -1,10 +1,11 @@
 {
   "source": "Georgian Wikisource",
   "page": "გამზრდელი",
-  "url": "https://ka.wikisource.org/wiki/%E1%83%92%E1%83%90%E1%83%9B%E1%83%96%E1%83%A0%E1%83%93%E1%83%94%E1%83%9A%E1%83%98?oldid=72887",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=72887",
   "revision": 72887,
   "retrieved": "2026-07-11",
   "transcription_license": "CC BY-SA 4.0",
-  "sha256": "a5a0cda4268fcb929a0c614bb19f5a23b196648d5737ef8e48bc19bbf0e65856",
-  "corrections": "2026-10-25: typography and OCR fixes over the Wikisource revision: spaces after punctuation, none before; spaced hyphens and dialogue hyphens as dashes; stray characters; legacy-font footnotes decoded (anbani.db git log)"
+  "converter": "scripts/literature/import.py",
+  "sha256": "e40cfbcc2f24079534c13e415c03aa6c2212efe969c4068b59d9d944ffa469a9",
+  "sha256_md": "2bdf7b6d7729dc0b4337f231179fb0130539c31cd36fa600826282fc145dcc9f"
 }

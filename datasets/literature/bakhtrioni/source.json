@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "ბახტრიონი",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=72752",
+  "revision": 72752,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "d9cffb3044e6de2fb86d77ae7e5bd337c0c4d10a36e6490bd5c06a81b4533940",
+  "sha256_md": "18d97ce003331e58abe59a12668aa9f1afd111409ec2ec0eaf7a06215b2568af"
+}

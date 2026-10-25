@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "მიწაა",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=74485",
+  "revision": 74485,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "59a19289bbd791fbe5fc71320ae9385f612a6e221a7793b4ea9eefda5da0d05d",
+  "sha256_md": "ed85faea2c5a1a7ea7df7c8fa702af8db5a4e4fb6a922a086fe860c11b71b8b8"
+}

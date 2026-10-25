@@ -1,10 +1,11 @@
 {
   "source": "Georgian Wikisource",
   "page": "სტუმარ-მასპინძელი",
-  "url": "https://ka.wikisource.org/wiki/%E1%83%A1%E1%83%A2%E1%83%A3%E1%83%9B%E1%83%90%E1%83%A0-%E1%83%9B%E1%83%90%E1%83%A1%E1%83%9E%E1%83%98%E1%83%9C%E1%83%AB%E1%83%94%E1%83%9A%E1%83%98?oldid=75306",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=75306",
   "revision": 75306,
   "retrieved": "2026-07-11",
   "transcription_license": "CC BY-SA 4.0",
-  "sha256": "0ee8e4d1920d53c0d5466b62b7deb8b6330108b0812c285b1d23bd59f237bf3f",
-  "corrections": "2026-10-25: typography and OCR fixes over the Wikisource revision: spaces after punctuation, none before; spaced hyphens and dialogue hyphens as dashes; stray characters; legacy-font footnotes decoded (anbani.db git log)"
+  "converter": "scripts/literature/import.py",
+  "sha256": "9b3e935c0a82ca25695561ea0516bdf9c6c62d83a7540fa29fffa05b0510d61e",
+  "sha256_md": "3551dd3c010f379ea2357638783dfbaee4f12b53b0643f60e0707b361c158c53"
 }

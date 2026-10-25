@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "გველის მჭამელი",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=72966",
+  "revision": 72966,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "64c644732ccc34d7bf97ccd069557ffd25d024b5b1fe740c2cff8e24c6e61708",
+  "sha256_md": "1f2aeb68b4629be2e83285886f4ef9304190d2ffbdf0596a2d790d946c762784"
+}

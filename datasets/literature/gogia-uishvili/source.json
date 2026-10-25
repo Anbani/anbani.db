@@ -1,10 +1,11 @@
 {
   "source": "Georgian Wikisource",
   "page": "გოგია უიშვილი",
-  "url": "https://ka.wikisource.org/wiki/%E1%83%92%E1%83%9D%E1%83%92%E1%83%98%E1%83%90_%E1%83%A3%E1%83%98%E1%83%A8%E1%83%95%E1%83%98%E1%83%9A%E1%83%98?oldid=73009",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=73009",
   "revision": 73009,
   "retrieved": "2026-07-11",
   "transcription_license": "CC BY-SA 4.0",
-  "sha256": "adc3ec67ca1e94fc2ca8597270bfb9326528b28402d124c3472bd1cfe9f9626e",
-  "corrections": "2026-10-25: typography and OCR fixes over the Wikisource revision: spaces after punctuation, none before; spaced hyphens and dialogue hyphens as dashes; stray characters; legacy-font footnotes decoded (anbani.db git log)"
+  "converter": "scripts/literature/import.py",
+  "sha256": "fe71d7368deaa1f4183967f171381bcb070a860fe79aa7a989fb7ce36d9701cb",
+  "sha256_md": "5677a2c0686f86b74def69cd96bb4e69d2561adb3f5ecb4eecd6bfe0efff3c4c"
 }

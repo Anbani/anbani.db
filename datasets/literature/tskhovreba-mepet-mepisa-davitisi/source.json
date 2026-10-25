@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "დავით აღმაშენებლის ისტორიკოსი - \"ცხოვრება მეფეთ-მეფისა დავითისი\" (1955)",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=73101",
+  "revision": 73101,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "dea1e64c165fcdad2125762aea910ed6b8e914aebc6045a2895cbce7748fb41f",
+  "sha256_md": "54e7448a95ec7c5b3786a380d65d81b4af0bb50aa2cead310641a896acceed5d"
+}

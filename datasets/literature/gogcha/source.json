@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "გოგჩა",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=73017",
+  "revision": 73017,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "c3f01a866d319708ddfb3ab665b4a584bb24dac2ae9c88057c891ef8a3df3b1a",
+  "sha256_md": "a8a9c65e3c76376d0c435317e08a0c734479758a00a386882822dbc462d3a8ad"
+}

@@ -1,10 +1,11 @@
 {
   "source": "Georgian Wikisource",
   "page": "კაცია-ადამიანი?!",
-  "url": "https://ka.wikisource.org/wiki/%E1%83%99%E1%83%90%E1%83%AA%E1%83%98%E1%83%90-%E1%83%90%E1%83%93%E1%83%90%E1%83%9B%E1%83%98%E1%83%90%E1%83%9C%E1%83%98%3F!?oldid=73882",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=73882",
   "revision": 73882,
   "retrieved": "2026-07-11",
   "transcription_license": "CC BY-SA 4.0",
-  "sha256": "be2051a75def0f8b93eeb68a8b9ca133c14d8340372bfd456e2e63713a86ffbf",
-  "corrections": "2026-10-25: typography and OCR fixes over the Wikisource revision: spaces after punctuation, none before; spaced hyphens and dialogue hyphens as dashes; stray characters; legacy-font footnotes decoded (anbani.db git log)"
+  "converter": "scripts/literature/import.py",
+  "sha256": "354761313079eac390b4014314a7bde3fd96e848ef617b30e83823f6c702a325",
+  "sha256_md": "a4c3ee7da543ae869e8792f5e86c84711568ae49dce96156402576d24c98f3b1"
 }

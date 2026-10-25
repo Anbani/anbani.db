@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "ხმელი წიფელი",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=76154",
+  "revision": 76154,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "a2b599b0325e30eb561f58164da999b9ec88f710cb1f1ac601a0498a4dbc215e",
+  "sha256_md": "c81c468057fdcf2c8a114d7a650ae012a795ccd6d6bd6119eacb6a44334abce9"
+}

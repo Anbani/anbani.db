@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "თორნიკე ერისთავი",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=73579",
+  "revision": 73579,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "d3a4281d53f1381906a8e387c93c9b45634387e463bd181dfbdf72bf951d0114",
+  "sha256_md": "837eaf130d06754a2f70e4703e864bb62b448cfcd7975d4914293e7deaf8ee62"
+}

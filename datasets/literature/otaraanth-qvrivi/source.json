@@ -1,10 +1,11 @@
 {
   "source": "Georgian Wikisource",
   "page": "ოთარაანთ ქვრივი",
-  "url": "https://ka.wikisource.org/wiki/%E1%83%9D%E1%83%97%E1%83%90%E1%83%A0%E1%83%90%E1%83%90%E1%83%9C%E1%83%97_%E1%83%A5%E1%83%95%E1%83%A0%E1%83%98%E1%83%95%E1%83%98?oldid=74859",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=74859",
   "revision": 74859,
   "retrieved": "2026-07-11",
   "transcription_license": "CC BY-SA 4.0",
-  "sha256": "68dda41674a455adb2390bb350743be40583deb027c7981121bc0ac89f19610c",
-  "corrections": "2026-10-25: typography and OCR fixes over the Wikisource revision: spaces after punctuation, none before; spaced hyphens and dialogue hyphens as dashes; stray characters; legacy-font footnotes decoded (anbani.db git log)"
+  "converter": "scripts/literature/import.py",
+  "sha256": "cf7f06131a3631938da26b51bc9a2266d599b18fa8a25eb9b7faaee7c95a82aa",
+  "sha256_md": "5188afa0850af33b40a4b9d1419543ee542a7a8dfa93719cda9fc7f9f2d2261d"
 }

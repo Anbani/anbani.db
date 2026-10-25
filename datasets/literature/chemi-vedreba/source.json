@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "ჩემი ვედრება",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=75849",
+  "revision": 75849,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "b5bf6b2ad84a283e2715b209cc8b9e659b7124fc7bcadf9fd846d4addc5ef78e",
+  "sha256_md": "b5a8af18095eb99133ac11bbf2730ab8eee8ca7763e8cb3dac454e7eaa34771e"
+}

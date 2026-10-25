@@ -1,10 +1,22 @@
 {
   "source": "Georgian Wikisource",
   "page": "ხევის ბერი გოჩა",
-  "url": "https://ka.wikisource.org/wiki/%E1%83%AE%E1%83%94%E1%83%95%E1%83%98%E1%83%A1_%E1%83%91%E1%83%94%E1%83%A0%E1%83%98_%E1%83%92%E1%83%9D%E1%83%A9%E1%83%90?oldid=76132",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=76132",
   "revision": 76132,
   "retrieved": "2026-07-11",
   "transcription_license": "CC BY-SA 4.0",
-  "sha256": "769524b4d2490d1eabd45192d3eadaa4203ac1f26afbdbf08616ca377e9116b7",
-  "corrections": "2026-10-25: typography and OCR fixes over the Wikisource revision: spaces after punctuation, none before; spaced hyphens and dialogue hyphens as dashes; stray characters; legacy-font footnotes decoded (anbani.db git log)"
+  "converter": "scripts/literature/import.py",
+  "corrections": [
+    "მტერს.შეხვდა → მტერს შეხვდა",
+    "ოსებიდა ნუგზარ → ოსები და ნუგზარ",
+    "საალერსოდ?ნ → საალერსოდ?",
+    "ალერსი?ნ → ალერსი?",
+    "გახადა?ნ-ონისეს → გახადა? ონისეს",
+    "3ხოლოდ მაშინ → მხოლოდ მაშინ",
+    "დამ.ლული → დამალული",
+    "სდებდნენ.     \" → სდებდნენ.",
+    "-  - მთები → - მთები"
+  ],
+  "sha256": "53461cb986e6eb02a83393c87b0acb528d8f56faf42715c63e86c40a07f905eb",
+  "sha256_md": "9f66be226b097cbf387f1e61abd2c0c58213cb4a5ac2ce9a2dc71ab895c491f0"
 }

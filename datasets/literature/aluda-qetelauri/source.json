@@ -1,10 +1,11 @@
 {
   "source": "Georgian Wikisource",
   "page": "ალუდა ქეთელაური",
-  "url": "https://ka.wikisource.org/wiki/%E1%83%90%E1%83%9A%E1%83%A3%E1%83%93%E1%83%90_%E1%83%A5%E1%83%94%E1%83%97%E1%83%94%E1%83%9A%E1%83%90%E1%83%A3%E1%83%A0%E1%83%98?oldid=72525",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=72525",
   "revision": 72525,
   "retrieved": "2026-07-11",
   "transcription_license": "CC BY-SA 4.0",
-  "sha256": "4690e6727dc3ce6dfcfed3f3fc02bbe0138aca73382c75eff171817492a0c65b",
-  "corrections": "2026-10-25: typography and OCR fixes over the Wikisource revision: spaces after punctuation, none before; spaced hyphens and dialogue hyphens as dashes; stray characters; legacy-font footnotes decoded (anbani.db git log)"
+  "converter": "scripts/literature/import.py",
+  "sha256": "133a34abfc4c9bdfb4b9a1273e99e5a9a4ca11b318e13256198e537b5c0f9f43",
+  "sha256_md": "6eb36694b48cec977d983b5ac0593b5b79e0f92c0b249988ea97e587e5fc46e4"
 }

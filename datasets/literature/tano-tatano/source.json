@@ -1,9 +1,11 @@
 {
   "source": "Georgian Wikisource",
   "page": "ტანო ტატანო",
-  "url": "https://ka.wikisource.org/wiki/%E1%83%A2%E1%83%90%E1%83%9C%E1%83%9D_%E1%83%A2%E1%83%90%E1%83%A2%E1%83%90%E1%83%9C%E1%83%9D?oldid=75343",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=75343",
   "revision": 75343,
   "retrieved": "2026-07-11",
   "transcription_license": "CC BY-SA 4.0",
-  "sha256": "8086f14342c538e5606a21eb161fc036b23785246c6ff5ea4168cb86d449f878"
+  "converter": "scripts/literature/import.py",
+  "sha256": "a666a29bb438d14ba102b9cc70cf5d0f25475616c62f526934cb2d09685499ce",
+  "sha256_md": "fecc9cf2f2784e990e09645845087badee89f7c4d1ecab204af53699717879c4"
 }

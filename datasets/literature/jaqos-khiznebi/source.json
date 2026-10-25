@@ -1,10 +1,11 @@
 {
   "source": "Georgian Wikisource",
   "page": "ჯაყოს ხიზნები",
-  "url": "https://ka.wikisource.org/wiki/%E1%83%AF%E1%83%90%E1%83%A7%E1%83%9D%E1%83%A1_%E1%83%AE%E1%83%98%E1%83%96%E1%83%9C%E1%83%94%E1%83%91%E1%83%98?oldid=76208",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=76208",
   "revision": 76208,
   "retrieved": "2026-07-11",
   "transcription_license": "CC BY-SA 4.0",
-  "sha256": "ecc2397a3a58c125ba0903174a5e192febb7085daa5b80b3d03ea83864134256",
-  "corrections": "2026-10-25: typography and OCR fixes over the Wikisource revision: spaces after punctuation, none before; spaced hyphens and dialogue hyphens as dashes; stray characters; legacy-font footnotes decoded (anbani.db git log)"
+  "converter": "scripts/literature/import.py",
+  "sha256": "9445014303d1059b6e375949abe7bf93577d8b5d55613b9496ddd8f90a8fccd5",
+  "sha256_md": "93f15aff7e2577c65d671483a2dfe75ade28967eeb3596814b2ee3fdb9e8b0e2"
 }

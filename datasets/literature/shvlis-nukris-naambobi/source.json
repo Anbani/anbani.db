@@ -1,10 +1,11 @@
 {
   "source": "Georgian Wikisource",
   "page": "შვლის ნუკრის ნაამბობი",
-  "url": "https://ka.wikisource.org/wiki/%E1%83%A8%E1%83%95%E1%83%9A%E1%83%98%E1%83%A1_%E1%83%9C%E1%83%A3%E1%83%99%E1%83%A0%E1%83%98%E1%83%A1_%E1%83%9C%E1%83%90%E1%83%90%E1%83%9B%E1%83%91%E1%83%9D%E1%83%91%E1%83%98?oldid=77352",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=77352",
   "revision": 77352,
   "retrieved": "2026-07-11",
   "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
   "sha256": "9c9b42e7be66d1dcde510a88e3ca4972f0a0e7a99337d7657b5ac509064473cb",
-  "corrections": "2026-10-25: typography and OCR fixes over the Wikisource revision: spaces after punctuation, none before; spaced hyphens and dialogue hyphens as dashes; stray characters; legacy-font footnotes decoded (anbani.db git log)"
+  "sha256_md": "de84abe28d041a9b9026cc40d9d8d5df4f9a6e6d93b892765caced86cbb2ffe1"
 }

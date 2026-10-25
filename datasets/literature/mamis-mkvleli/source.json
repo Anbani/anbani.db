@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "მამის მკვლელი",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=74079",
+  "revision": 74079,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "11a66ff334ec442021cf4171462d85982d7909f6ecca799e9f3350cc24d50f0c",
+  "sha256_md": "5e28436d270c97e9bb56fc1907da7a4e357772dc1fe2001c7c0edcc2749c5057"
+}

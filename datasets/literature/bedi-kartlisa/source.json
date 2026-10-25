@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "ბედი ქართლისა",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=72755",
+  "revision": 72755,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "f125f6dbb1a346e4570b5fbff4aeb20fb0af0be147b3204b769addf9bffa2dad",
+  "sha256_md": "5f566a76db35dfdaa384e54056a6edac345e112c746ab1559c894aef2b02b06f"
+}

@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "გალობანი სინანულისანი",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=72881",
+  "revision": 72881,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "b593f139e81607cc93e79eac8385306a64ae0164245944d6ac466b99d37d02f8",
+  "sha256_md": "2c39029d25f79cf959952b093026c37127b0a74f73c3db7dac3f640ba486fc17"
+}

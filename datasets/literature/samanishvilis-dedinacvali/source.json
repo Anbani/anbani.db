@@ -1,10 +1,11 @@
 {
   "source": "Georgian Wikisource",
   "page": "სამანიშვილის დედინაცვალი",
-  "url": "https://ka.wikisource.org/wiki/%E1%83%A1%E1%83%90%E1%83%9B%E1%83%90%E1%83%9C%E1%83%98%E1%83%A8%E1%83%95%E1%83%98%E1%83%9A%E1%83%98%E1%83%A1_%E1%83%93%E1%83%94%E1%83%93%E1%83%98%E1%83%9C%E1%83%90%E1%83%AA%E1%83%95%E1%83%90%E1%83%9A%E1%83%98?oldid=75105",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=75105",
   "revision": 75105,
   "retrieved": "2026-07-11",
   "transcription_license": "CC BY-SA 4.0",
-  "sha256": "2915b208ab7ef7a25a61464d70c0de5de538f4d9759bf9e217447ad6bd72ed6d",
-  "corrections": "2026-10-25: typography and OCR fixes over the Wikisource revision: spaces after punctuation, none before; spaced hyphens and dialogue hyphens as dashes; stray characters; legacy-font footnotes decoded (anbani.db git log)"
+  "converter": "scripts/literature/import.py",
+  "sha256": "618a4aca0d48b62ceb68edb3534551dffcc5e3f20e11f62863921d3be3ce8eff",
+  "sha256_md": "f2bfdf729f4161caec21142f8694bf50bb2b3893278fc389188107486a84db0c"
 }

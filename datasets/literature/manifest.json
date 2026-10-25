@@ -1,27 +1,1582 @@
 {
-  "schema": 1,
-  "canonical_format": "UTF-8 NFC plain text",
-  "public_domain_jurisdiction": "Georgia",
-  "works": [
-    { "id": "sibrdze-sitsruisa", "title": "სიბრძნე სიცრუისა", "author": "სულხან-საბა ორბელიანი", "death_year": 1725, "status": "ready" },
-    { "id": "kacia-adamiani", "title": "კაცია-ადამიანი?!", "author": "ილია ჭავჭავაძე", "death_year": 1907, "status": "ready" },
-    { "id": "otaraanth-qvrivi", "title": "ოთარაანთ ქვრივი", "author": "ილია ჭავჭავაძე", "death_year": 1907, "status": "ready" },
-    { "id": "khevisberi-gocha", "title": "ხევისბერი გოჩა", "author": "ალექსანდრე ყაზბეგი", "death_year": 1893, "status": "ready" },
-    { "id": "shvlis-nukris-naambobi", "title": "შვლის ნუკრის ნაამბობი", "author": "ვაჟა-ფშაველა", "death_year": 1915, "status": "ready" },
-    { "id": "samanishvilis-dedinacvali", "title": "სამანიშვილის დედინაცვალი", "author": "დავით კლდიაშვილი", "death_year": 1931, "status": "ready" },
-    { "id": "jaqos-khiznebi", "title": "ჯაყოს ხიზნები", "author": "მიხეილ ჯავახიშვილი", "death_year": 1937, "status": "ready" },
-    { "id": "arsena-marabdeli", "title": "არსენა მარაბდელი", "author": "მიხეილ ჯავახიშვილი", "death_year": 1937, "status": "source-needed", "reason": "Wikisource index entry is a red link; no reusable full transcription was found." },
-    { "id": "shelocvili-mamuli", "title": "შელოცვილი მამული", "author": "ნიკო ლორთქიფანიძე", "death_year": 1944, "status": "invalid-title", "reason": "No authoritative bibliographic record found; possibly confused with შელოცვა რადიოთი." },
-    { "id": "gogia-uishvili", "title": "გოგია უიშვილი", "author": "ეგნატე ნინოშვილი", "death_year": 1894, "status": "ready" },
-    { "id": "vefxistyaosani", "title": "ვეფხისტყაოსანი", "author": "შოთა რუსთაველი", "status": "ready", "path": "../vefxistyaosani.txt", "source_review": "needed" },
-    { "id": "merani", "title": "მერანი", "author": "ნიკოლოზ ბარათაშვილი", "death_year": 1845, "status": "ready" },
-    { "id": "stumarmaspindzeli", "title": "სტუმარ-მასპინძელი", "author": "ვაჟა-ფშაველა", "death_year": 1915, "status": "ready" },
-    { "id": "aluda-qetelauri", "title": "ალუდა ქეთელაური", "author": "ვაჟა-ფშაველა", "death_year": 1915, "status": "ready" },
-    { "id": "gandegili", "title": "განდეგილი", "author": "ილია ჭავჭავაძე", "death_year": 1907, "status": "ready" },
-    { "id": "gamzrdeli", "title": "გამზრდელი", "author": "აკაკი წერეთელი", "death_year": 1915, "status": "ready" },
-    { "id": "davitiani", "title": "დავითიანი", "author": "დავით გურამიშვილი", "death_year": 1792, "status": "transcription-needed", "source": "https://www.nplg.gov.ge/ebooks/authors/david_guramishvili/davitian.pdf", "reason": "Institutional scan found; Wikisource page contains only the collection contents." },
-    { "id": "tano-tatano", "title": "ტანო ტატანო", "author": "ბესიკი", "death_year": 1791, "status": "ready" },
-    { "id": "leqsi-myeqeri", "title": "ლექსი მეწყერი", "author": "ტიციან ტაბიძე", "death_year": 1937, "status": "ready" },
-    { "id": "memento-mori", "title": "Memento Mori", "author": "ტერენტი გრანელი", "death_year": 1934, "status": "ready" }
-  ]
+ "schema": 2,
+ "canonical_format": "pandoc Markdown text.md (YAML front matter); text.txt derived (UTF-8 NFC)",
+ "public_domain_jurisdiction": "Georgia",
+ "works": [
+  {
+   "id": "sibrdze-sitsruisa",
+   "title": "სიბრძნე სიცრუისა",
+   "author": "სულხან-საბა ორბელიანი",
+   "death_year": 1725,
+   "status": "ready",
+   "shelf": "პროზა",
+   "genre": "იგავ-არაკები",
+   "wikisource": {
+    "page": "წიგნი სიბრძნე სიცრუისა",
+    "revision": 76066
+   },
+   "top100_rank": 8
+  },
+  {
+   "id": "kacia-adamiani",
+   "title": "კაცია-ადამიანი?!",
+   "author": "ილია ჭავჭავაძე",
+   "death_year": 1907,
+   "status": "ready",
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "wikisource": {
+    "page": "კაცია-ადამიანი?!",
+    "revision": 73882
+   },
+   "top100_rank": 18
+  },
+  {
+   "id": "otaraanth-qvrivi",
+   "title": "ოთარაანთ ქვრივი",
+   "author": "ილია ჭავჭავაძე",
+   "death_year": 1907,
+   "status": "ready",
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "wikisource": {
+    "page": "ოთარაანთ ქვრივი",
+    "revision": 74859
+   },
+   "top100_rank": 19
+  },
+  {
+   "id": "khevisberi-gocha",
+   "title": "ხევისბერი გოჩა",
+   "author": "ალექსანდრე ყაზბეგი",
+   "death_year": 1893,
+   "status": "ready",
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "wikisource": {
+    "page": "ხევის ბერი გოჩა",
+    "revision": 76132
+   },
+   "top100_rank": 33
+  },
+  {
+   "id": "shvlis-nukris-naambobi",
+   "title": "შვლის ნუკრის ნაამბობი",
+   "author": "ვაჟა-ფშაველა",
+   "death_year": 1915,
+   "status": "ready",
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "wikisource": {
+    "page": "შვლის ნუკრის ნაამბობი",
+    "revision": 77352
+   },
+   "top100_rank": 77
+  },
+  {
+   "id": "samanishvilis-dedinacvali",
+   "title": "სამანიშვილის დედინაცვალი",
+   "author": "დავით კლდიაშვილი",
+   "death_year": 1931,
+   "status": "ready",
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "wikisource": {
+    "page": "სამანიშვილის დედინაცვალი",
+    "revision": 75105
+   },
+   "top100_rank": 20
+  },
+  {
+   "id": "jaqos-khiznebi",
+   "title": "ჯაყოს ხიზნები",
+   "author": "მიხეილ ჯავახიშვილი",
+   "death_year": 1937,
+   "status": "ready",
+   "shelf": "პროზა",
+   "genre": "რომანი",
+   "wikisource": {
+    "page": "ჯაყოს ხიზნები",
+    "revision": 76208
+   },
+   "top100_rank": 9
+  },
+  {
+   "id": "arsena-marabdeli",
+   "title": "არსენა მარაბდელი",
+   "author": "მიხეილ ჯავახიშვილი",
+   "death_year": 1937,
+   "status": "source-needed",
+   "reason": "Wikisource index entry is a red link; no reusable full transcription was found.",
+   "top100_rank": 82
+  },
+  {
+   "id": "gogia-uishvili",
+   "title": "გოგია უიშვილი",
+   "author": "ეგნატე ნინოშვილი",
+   "death_year": 1894,
+   "status": "ready",
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "wikisource": {
+    "page": "გოგია უიშვილი",
+    "revision": 73009
+   }
+  },
+  {
+   "id": "vefxistyaosani",
+   "title": "ვეფხისტყაოსანი",
+   "author": "შოთა რუსთაველი",
+   "status": "ready",
+   "path": "../vefxistyaosani.txt",
+   "source_review": "needed",
+   "top100_rank": 1
+  },
+  {
+   "id": "merani",
+   "title": "მერანი",
+   "author": "ნიკოლოზ ბარათაშვილი",
+   "death_year": 1845,
+   "status": "ready",
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "wikisource": {
+    "page": "მერანი",
+    "revision": 74366
+   },
+   "top100_rank": 4
+  },
+  {
+   "id": "stumarmaspindzeli",
+   "title": "სტუმარ-მასპინძელი",
+   "author": "ვაჟა-ფშაველა",
+   "death_year": 1915,
+   "status": "ready",
+   "shelf": "პოეზია",
+   "genre": "პოემა",
+   "wikisource": {
+    "page": "სტუმარ-მასპინძელი",
+    "revision": 75306
+   },
+   "top100_rank": 3
+  },
+  {
+   "id": "aluda-qetelauri",
+   "title": "ალუდა ქეთელაური",
+   "author": "ვაჟა-ფშაველა",
+   "death_year": 1915,
+   "status": "ready",
+   "shelf": "პოეზია",
+   "genre": "პოემა",
+   "wikisource": {
+    "page": "ალუდა ქეთელაური",
+    "revision": 72525
+   },
+   "top100_rank": 2
+  },
+  {
+   "id": "gandegili",
+   "title": "განდეგილი",
+   "author": "ილია ჭავჭავაძე",
+   "death_year": 1907,
+   "status": "ready",
+   "shelf": "პოეზია",
+   "genre": "პოემა",
+   "wikisource": {
+    "page": "განდეგილი",
+    "revision": 72897
+   },
+   "top100_rank": 17
+  },
+  {
+   "id": "gamzrdeli",
+   "title": "გამზრდელი",
+   "author": "აკაკი წერეთელი",
+   "death_year": 1915,
+   "status": "ready",
+   "shelf": "პოეზია",
+   "genre": "პოემა",
+   "wikisource": {
+    "page": "გამზრდელი",
+    "revision": 72887
+   },
+   "top100_rank": 24
+  },
+  {
+   "id": "davitiani",
+   "title": "დავითიანი",
+   "author": "დავით გურამიშვილი",
+   "death_year": 1792,
+   "status": "transcription-needed",
+   "source": "https://www.nplg.gov.ge/ebooks/authors/david_guramishvili/davitian.pdf",
+   "reason": "Institutional scan found; Wikisource page contains only the collection contents.",
+   "top100_rank": 6
+  },
+  {
+   "id": "tano-tatano",
+   "title": "ტანო ტატანო",
+   "author": "ბესიკი",
+   "death_year": 1791,
+   "status": "ready",
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "wikisource": {
+    "page": "ტანო ტატანო",
+    "revision": 75343
+   },
+   "top100_rank": 36
+  },
+  {
+   "id": "leqsi-myeqeri",
+   "title": "ლექსი მეწყერი",
+   "author": "ტიციან ტაბიძე",
+   "death_year": 1937,
+   "status": "ready",
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "wikisource": {
+    "page": "ლექსი მეწყერი",
+    "revision": 77801
+   },
+   "top100_rank": 45
+  },
+  {
+   "id": "memento-mori",
+   "title": "Memento Mori",
+   "author": "ტერენტი გრანელი",
+   "death_year": 1934,
+   "status": "ready",
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "wikisource": {
+    "page": "MEMENTO MORI",
+    "revision": 72209
+   },
+   "top100_rank": 85
+  },
+  {
+   "id": "shushanikis-tsameba",
+   "title": "შუშანიკის წამება",
+   "author": "იაკობ ცურტაველი",
+   "death_year": 490,
+   "shelf": "პროზა",
+   "genre": "ჰაგიოგრაფია",
+   "status": "ready",
+   "wikisource": {
+    "page": "შუშანიკის წამება",
+    "revision": 78408
+   },
+   "top100_rank": 5
+  },
+  {
+   "id": "gvelis-mchameli",
+   "title": "გველის მჭამელი",
+   "author": "ვაჟა-ფშაველა",
+   "death_year": 1915,
+   "shelf": "პოეზია",
+   "genre": "პოემა",
+   "status": "ready",
+   "wikisource": {
+    "page": "გველის მჭამელი",
+    "revision": 72966
+   },
+   "top100_rank": 7
+  },
+  {
+   "id": "bedi-kartlisa",
+   "title": "ბედი ქართლისა",
+   "author": "ნიკოლოზ ბარათაშვილი",
+   "death_year": 1845,
+   "shelf": "პოეზია",
+   "genre": "პოემა",
+   "status": "ready",
+   "wikisource": {
+    "page": "ბედი ქართლისა",
+    "revision": 72755
+   },
+   "top100_rank": 22
+  },
+  {
+   "id": "mgzavris-tserilebi",
+   "title": "მგზავრის წერილები",
+   "author": "ილია ჭავჭავაძე",
+   "death_year": 1907,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "ready",
+   "wikisource": {
+    "page": "მგზავრის წერილები",
+    "revision": 74301
+   },
+   "top100_rank": 23
+  },
+  {
+   "id": "galobani-sinanulisani",
+   "title": "გალობანი სინანულისანი",
+   "author": "დავით აღმაშენებელი",
+   "death_year": 1125,
+   "shelf": "პოეზია",
+   "genre": "ჰიმნოგრაფია",
+   "status": "ready",
+   "wikisource": {
+    "page": "გალობანი სინანულისანი",
+    "revision": 72881
+   },
+   "top100_rank": 26
+  },
+  {
+   "id": "bakhtrioni",
+   "title": "ბახტრიონი",
+   "author": "ვაჟა-ფშაველა",
+   "death_year": 1915,
+   "shelf": "პოეზია",
+   "genre": "პოემა",
+   "status": "ready",
+   "wikisource": {
+    "page": "ბახტრიონი",
+    "revision": 72752
+   },
+   "top100_rank": 28
+  },
+  {
+   "id": "pikrni-mtkvris-piras",
+   "title": "ფიქრნი მტკვრის პირას",
+   "author": "ნიკოლოზ ბარათაშვილი",
+   "death_year": 1845,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "ready",
+   "wikisource": {
+    "page": "ფიქრნი მტკვრის პირას",
+    "revision": 75441
+   },
+   "top100_rank": 31
+  },
+  {
+   "id": "shemoghameba-mtatsmindazed",
+   "title": "შემოღამება მთაწმინდაზედ",
+   "author": "ნიკოლოზ ბარათაშვილი",
+   "death_year": 1845,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "ready",
+   "wikisource": {
+    "page": "შემოღამება მთაწმიდაზედ",
+    "revision": 75760
+   },
+   "top100_rank": 32
+  },
+  {
+   "id": "gogcha",
+   "title": "გოგჩა",
+   "author": "ალექსანდრე ჭავჭავაძე",
+   "death_year": 1846,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "ready",
+   "wikisource": {
+    "page": "გოგჩა",
+    "revision": 73017
+   },
+   "top100_rank": 40
+  },
+  {
+   "id": "gantiadi",
+   "title": "განთიადი",
+   "author": "აკაკი წერეთელი",
+   "death_year": 1915,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "ready",
+   "wikisource": {
+    "page": "განთიადი",
+    "revision": 72899
+   },
+   "top100_rank": 42
+  },
+  {
+   "id": "suliko",
+   "title": "სულიკო",
+   "author": "აკაკი წერეთელი",
+   "death_year": 1915,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "ready",
+   "wikisource": {
+    "page": "სულიკო",
+    "revision": 75310
+   },
+   "top100_rank": 43
+  },
+  {
+   "id": "tornike-eristavi",
+   "title": "თორნიკე ერისთავი",
+   "author": "აკაკი წერეთელი",
+   "death_year": 1915,
+   "shelf": "პოეზია",
+   "genre": "პოემა",
+   "status": "ready",
+   "wikisource": {
+    "page": "თორნიკე ერისთავი",
+    "revision": 73579
+   },
+   "top100_rank": 44
+  },
+  {
+   "id": "achrdili",
+   "title": "აჩრდილი",
+   "author": "ილია ჭავჭავაძე",
+   "death_year": 1907,
+   "shelf": "პოეზია",
+   "genre": "პოემა",
+   "status": "ready",
+   "wikisource": {
+    "page": "აჩრდილი",
+    "revision": 72645
+   },
+   "top100_rank": 50
+  },
+  {
+   "id": "suramis-tsikhe",
+   "title": "სურამის ციხე",
+   "author": "დანიელ ჭონქაძე",
+   "death_year": 1860,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "ready",
+   "wikisource": {
+    "page": "სურამის ციხე",
+    "revision": 75322
+   },
+   "top100_rank": 51
+  },
+  {
+   "id": "tskhovreba-kartvelta-mepeta",
+   "title": "ცხოვრება ქართველთა მეფეთა",
+   "author": "ლეონტი მროველი",
+   "death_year": 1100,
+   "shelf": "პროზა",
+   "genre": "ქრონიკა",
+   "status": "ready",
+   "wikisource": {
+    "page": "ლეონტი მროველი \"ცხოვრება ქართველთა მეფეთა\" (1955)",
+    "revision": 74002
+   },
+   "top100_rank": 54
+  },
+  {
+   "id": "tskhovreba-mepet-mepisa-davitisi",
+   "title": "ცხოვრება მეფეთ-მეფისა დავითისი",
+   "author": "დავით აღმაშენებლის ისტორიკოსი",
+   "death_year": 1130,
+   "shelf": "პროზა",
+   "genre": "ქრონიკა",
+   "status": "ready",
+   "wikisource": {
+    "page": "დავით აღმაშენებლის ისტორიკოსი - \"ცხოვრება მეფეთ-მეფისა დავითისი\" (1955)",
+    "revision": 73101
+   },
+   "top100_rank": 55
+  },
+  {
+   "id": "gabaaseba-teimurazisa-da-rustvelisa",
+   "title": "გაბაასება თეიმურაზისა და რუსთველისა",
+   "author": "არჩილი",
+   "death_year": 1713,
+   "shelf": "პოეზია",
+   "genre": "პოემა",
+   "status": "ready",
+   "wikisource": {
+    "page": "არჩილ მეფე - \"გაბაასება თეიმურაზისა და რუსთველისა\"",
+    "revision": 72602
+   },
+   "top100_rank": 62
+  },
+  {
+   "id": "mogzauroba-evropashi",
+   "title": "მოგზაურობა ევროპაში",
+   "author": "სულხან-საბა ორბელიანი",
+   "death_year": 1725,
+   "shelf": "პროზა",
+   "genre": "მოგზაურობა",
+   "status": "ready",
+   "wikisource": {
+    "page": "მოგზაურობა ევროპაში",
+    "revision": 74496
+   },
+   "top100_rank": 63
+  },
+  {
+   "id": "kalmasoba",
+   "title": "კალმასობა",
+   "author": "იოანე ბატონიშვილი",
+   "death_year": 1830,
+   "shelf": "პროზა",
+   "genre": "რომანი",
+   "status": "source-needed",
+   "reason": "Wikisource page is an index of parts with no text.",
+   "top100_rank": 64
+  },
+  {
+   "id": "tamar-mepis-sakhe-betaniis-eklesiashi",
+   "title": "თამარ მეფის სახე ბეთანიის ეკლესიაში",
+   "author": "გრიგოლ ორბელიანი",
+   "death_year": 1883,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "ready",
+   "wikisource": {
+    "page": "თამარ მეფის სახე ბეთანიის ეკლესიაში",
+    "revision": 73498
+   },
+   "top100_rank": 66
+  },
+  {
+   "id": "tsisa-pers",
+   "title": "ცისა ფერს",
+   "author": "ნიკოლოზ ბარათაშვილი",
+   "death_year": 1845,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "ready",
+   "wikisource": {
+    "page": "(ცისა ფერს, ლურჯსა ფერს...)",
+    "revision": 69316
+   },
+   "top100_rank": 67
+  },
+  {
+   "id": "solomon-isakich-mejghanuashvili",
+   "title": "სოლომონ ისაკიჩ მეჯღანუაშვილი",
+   "author": "ლავრენტი არდაზიანი",
+   "death_year": 1870,
+   "shelf": "პროზა",
+   "genre": "რომანი",
+   "status": "ready",
+   "wikisource": {
+    "page": "სოლომონ ისაკიჩ მეჯღანუაშვილი",
+    "revision": 75273
+   },
+   "top100_rank": 68
+  },
+  {
+   "id": "sarchobelazed",
+   "title": "სარჩობელაზედ",
+   "author": "ილია ჭავჭავაძე",
+   "death_year": 1907,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "ready",
+   "wikisource": {
+    "page": "სარჩობელაზედ",
+    "revision": 75143
+   },
+   "top100_rank": 69
+  },
+  {
+   "id": "poeti",
+   "title": "პოეტი",
+   "author": "ილია ჭავჭავაძე",
+   "death_year": 1907,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "ready",
+   "wikisource": {
+    "page": "პოეტი (ილია ჭავჭავაძე)",
+    "revision": 74964
+   },
+   "top100_rank": 70
+  },
+  {
+   "id": "bashi-achuki",
+   "title": "ბაში-აჩუკი",
+   "author": "აკაკი წერეთელი",
+   "death_year": 1915,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "ready",
+   "wikisource": {
+    "page": "ბაში-აჩუკი",
+    "revision": 72749
+   },
+   "top100_rank": 71
+  },
+  {
+   "id": "chemi-tavgadasavali",
+   "title": "ჩემი თავგადასავალი",
+   "author": "აკაკი წერეთელი",
+   "death_year": 1915,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "ready",
+   "wikisource": {
+    "page": "ჩემი თავგადასავალი",
+    "revision": 75850
+   },
+   "top100_rank": 72
+  },
+  {
+   "id": "mamis-mkvleli",
+   "title": "მამის მკვლელი",
+   "author": "ალექსანდრე ყაზბეგი",
+   "death_year": 1893,
+   "shelf": "პროზა",
+   "genre": "რომანი",
+   "status": "ready",
+   "wikisource": {
+    "page": "მამის მკვლელი",
+    "revision": 74079
+   },
+   "top100_rank": 73
+  },
+  {
+   "id": "khanuma",
+   "title": "ხანუმა",
+   "author": "ავქსენტი ცაგარელი",
+   "death_year": 1902,
+   "shelf": "პროზა",
+   "genre": "პიესა",
+   "status": "ready",
+   "wikisource": {
+    "page": "ხანუმა",
+    "revision": 76115
+   },
+   "top100_rank": 74
+  },
+  {
+   "id": "iavnanam-ra-hkmna",
+   "title": "იავნანამ რა ჰქმნა?",
+   "author": "იაკობ გოგებაშვილი",
+   "death_year": 1912,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "ready",
+   "wikisource": {
+    "page": "იავნანამ რა ჰქმნა?",
+    "parts": [
+     {
+      "page": "იავნანამ რა ჰქმნა?/სამშობლო ღვინისა",
+      "revision": 73603
+     },
+     {
+      "page": "იავნანამ რა ჰქმნა?/მდევარი",
+      "revision": 73602
+     },
+     {
+      "page": "იავნანამ რა ჰქმნა?/ქეთო საშინლად იტანჯება",
+      "revision": 73605
+     },
+     {
+      "page": "იავნანამ რა ჰქმნა?/იავნანამ რა ჰქმნა?",
+      "revision": 73601
+     },
+     {
+      "page": "იავნანამ რა ჰქმნა?/ქეთო და მისი დედობილ-მამობილი",
+      "revision": 73604
+     },
+     {
+      "page": "იავნანამ რა ჰქმნა?/ქეთოს ბედნიერება",
+      "revision": 73606
+     }
+    ]
+   },
+   "top100_rank": 75
+  },
+  {
+   "id": "janqi-guriashi",
+   "title": "ჯანყი გურიაში",
+   "author": "ეგნატე ნინოშვილი",
+   "death_year": 1894,
+   "shelf": "პროზა",
+   "genre": "რომანი",
+   "status": "ready",
+   "wikisource": {
+    "page": "ჯანყი გურიაში",
+    "revision": 76197
+   },
+   "top100_rank": 76
+  },
+  {
+   "id": "khmeli-tsipeli",
+   "title": "ხმელი წიფელი",
+   "author": "ვაჟა-ფშაველა",
+   "death_year": 1915,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "ready",
+   "wikisource": {
+    "page": "ხმელი წიფელი",
+    "revision": 76154
+   },
+   "top100_rank": 78
+  },
+  {
+   "id": "chemi-vedreba",
+   "title": "ჩემი ვედრება",
+   "author": "ვაჟა-ფშაველა",
+   "death_year": 1915,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "ready",
+   "wikisource": {
+    "page": "ჩემი ვედრება",
+    "revision": 75849
+   },
+   "top100_rank": 79
+  },
+  {
+   "id": "darispanis-gasachiri",
+   "title": "დარისპანის გასაჭირი",
+   "author": "დავით კლდიაშვილი",
+   "death_year": 1931,
+   "shelf": "პროზა",
+   "genre": "პიესა",
+   "status": "ready",
+   "wikisource": {
+    "page": "დარისპანის გასაჭირი",
+    "revision": 73131
+   },
+   "top100_rank": 80
+  },
+  {
+   "id": "bebrebi",
+   "title": "ბებრები",
+   "author": "ნიკო ლორთქიფანიძე",
+   "death_year": 1944,
+   "shelf": "პროზა",
+   "genre": "ნოველა",
+   "status": "ready",
+   "wikisource": {
+    "page": "ბებრები",
+    "revision": 72753
+   },
+   "top100_rank": 81
+  },
+  {
+   "id": "lambalo-da-qasha",
+   "title": "ლამბალო და ყაშა",
+   "author": "მიხეილ ჯავახიშვილი",
+   "death_year": 1937,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "ready",
+   "wikisource": {
+    "page": "ლამბალო და ყაშა",
+    "revision": 73978
+   },
+   "top100_rank": 83
+  },
+  {
+   "id": "krtsanisis-qaqachoebi",
+   "title": "კრწანისის ყაყაჩოები",
+   "author": "ლადო ასათიანი",
+   "death_year": 1943,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "ready",
+   "wikisource": {
+    "page": "კრწანისის ყაყაჩოები",
+    "revision": 73964
+   },
+   "top100_rank": 88
+  },
+  {
+   "id": "elguja",
+   "title": "ელგუჯა",
+   "author": "ალექსანდრე ყაზბეგი",
+   "death_year": 1893,
+   "shelf": "პროზა",
+   "genre": "რომანი",
+   "status": "ready",
+   "wikisource": {
+    "page": "ელგუჯა",
+    "revision": 73249
+   }
+  },
+  {
+   "id": "paliastomis-tba",
+   "title": "პალიასტომის ტბა",
+   "author": "ეგნატე ნინოშვილი",
+   "death_year": 1894,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "ready",
+   "wikisource": {
+    "page": "პალიასტომის ტბა",
+    "revision": 74910
+   }
+  },
+  {
+   "id": "kamushadzis-gachirveba",
+   "title": "ქამუშაძის გაჭირვება",
+   "author": "დავით კლდიაშვილი",
+   "death_year": 1931,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "ready",
+   "wikisource": {
+    "page": "ქამუშაძის გაჭირვება",
+    "revision": 75491
+   }
+  },
+  {
+   "id": "soloman-morbeladze",
+   "title": "სოლომან მორბელაძე",
+   "author": "დავით კლდიაშვილი",
+   "death_year": 1931,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "ready",
+   "wikisource": {
+    "page": "სოლომან მორბელაძე",
+    "revision": 75271
+   }
+  },
+  {
+   "id": "trpoba-tsamebuli",
+   "title": "ტრფობა წამებული",
+   "author": "ვასილ ბარნოვი",
+   "death_year": 1934,
+   "shelf": "პროზა",
+   "genre": "რომანი",
+   "status": "ready",
+   "wikisource": {
+    "page": "ტრფობა წამებული",
+    "revision": 75360
+   }
+  },
+  {
+   "id": "mimkrali-sharavandedi",
+   "title": "მიმქრალი შარავანდედი",
+   "author": "ვასილ ბარნოვი",
+   "death_year": 1934,
+   "shelf": "პროზა",
+   "genre": "რომანი",
+   "status": "ready",
+   "wikisource": {
+    "page": "მიმქრალი შარავანდედი",
+    "revision": 74455
+   }
+  },
+  {
+   "id": "gabzaruli-guli",
+   "title": "გაბზარული გული",
+   "author": "შიო არაგვისპირელი",
+   "death_year": 1926,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "ready",
+   "wikisource": {
+    "page": "გაბზარული გული",
+    "revision": 72838
+   }
+  },
+  {
+   "id": "mitsaa",
+   "title": "მიწაა",
+   "author": "შიო არაგვისპირელი",
+   "death_year": 1926,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "ready",
+   "wikisource": {
+    "page": "მიწაა",
+    "revision": 74485
+   }
+  },
+  {
+   "id": "chemi-brali-ar-aris-ghmerto",
+   "title": "ჩემი ბრალი არ არის, ღმერთო!",
+   "author": "შიო არაგვისპირელი",
+   "death_year": 1926,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "ready",
+   "wikisource": {
+    "page": "ჩემი ბრალი არ არის, ღმერთო",
+    "revision": 75846
+   }
+  },
+  {
+   "id": "ali",
+   "title": "ალი",
+   "author": "ნიკო ლომოური",
+   "death_year": 1915,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "ready",
+   "wikisource": {
+    "page": "ალი",
+    "revision": 72520
+   }
+  },
+  {
+   "id": "magdanas-lurja",
+   "title": "მაგდანას ლურჯა",
+   "author": "ეკატერინე გაბაშვილი",
+   "death_year": 1938,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "ready",
+   "wikisource": {
+    "page": "მაგდანას ლურჯა",
+    "revision": 74049
+   }
+  },
+  {
+   "id": "mitsis-qivili",
+   "title": "მიწის ყივილი",
+   "author": "მიხეილ ჯავახიშვილი",
+   "death_year": 1937,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "ready",
+   "wikisource": {
+    "page": "მიწის ყივილი",
+    "revision": 74486
+   }
+  },
+  {
+   "id": "ria-ria",
+   "title": "რია-რია",
+   "author": "ტიციან ტაბიძე",
+   "death_year": 1937,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "ready",
+   "wikisource": {
+    "page": "რია-რია",
+    "revision": 77835
+   }
+  },
+  {
+   "id": "kaldeas-kalakebi",
+   "title": "ქალდეას ქალაქები",
+   "author": "ტიციან ტაბიძე",
+   "death_year": 1937,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "ready",
+   "wikisource": {
+    "page": "წიგნიდან „ქალდეას ქალაქები“",
+    "revision": 77860
+   }
+  },
+  {
+   "id": "daisebi",
+   "title": "დაისები",
+   "author": "ვალერიან გაფრინდაშვილი",
+   "death_year": 1941,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "source-needed",
+   "reason": "Wikisource page of this title is an essay, not the poem cycle."
+  },
+  {
+   "id": "grigol-khandztelis-tskhovreba",
+   "title": "გრიგოლ ხანძთელის ცხოვრება",
+   "author": "გიორგი მერჩულე",
+   "death_year": 960,
+   "shelf": "პროზა",
+   "genre": "ჰაგიოგრაფია",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "top100_rank": 14
+  },
+  {
+   "id": "abo-tpilelis-tsameba",
+   "title": "აბო ტფილელის წამება",
+   "author": "იოანე საბანისძე",
+   "death_year": 790,
+   "shelf": "პროზა",
+   "genre": "ჰაგიოგრაფია",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "top100_rank": 21
+  },
+  {
+   "id": "keba-da-dideba-kartulisa-enisa",
+   "title": "ქებაჲ და დიდებაჲ ქართულისა ენისაჲ",
+   "author": "იოანე ზოსიმე",
+   "death_year": 990,
+   "shelf": "პოეზია",
+   "genre": "ჰიმნოგრაფია",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "top100_rank": 25
+  },
+  {
+   "id": "kvachi-kvachantiradze",
+   "title": "კვაჭი კვაჭანტირაძე",
+   "author": "მიხეილ ჯავახიშვილი",
+   "death_year": 1937,
+   "shelf": "პროზა",
+   "genre": "რომანი",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "top100_rank": 30
+  },
+  {
+   "id": "kartlis-chiri",
+   "title": "ქართლის ჭირი",
+   "author": "დავით გურამიშვილი",
+   "death_year": 1792,
+   "shelf": "პოეზია",
+   "genre": "პოემა",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "top100_rank": 37
+  },
+  {
+   "id": "sadghegrdzelo",
+   "title": "სადღეგრძელო",
+   "author": "გრიგოლ ორბელიანი",
+   "death_year": 1883,
+   "shelf": "პოეზია",
+   "genre": "პოემა",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "top100_rank": 41
+  },
+  {
+   "id": "gaqra",
+   "title": "გაყრა",
+   "author": "გიორგი ერისთავი",
+   "death_year": 1864,
+   "shelf": "პროზა",
+   "genre": "პიესა",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "top100_rank": 52
+  },
+  {
+   "id": "sibrdzne-balahvarisi",
+   "title": "სიბრძნე ბალაჰვარისი",
+   "author": "უცნობი ავტორი (ბალავარიანი)",
+   "death_year": 1000,
+   "shelf": "პროზა",
+   "genre": "რომანი",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "top100_rank": 53
+  },
+  {
+   "id": "tamariani",
+   "title": "თამარიანი",
+   "author": "ჩახრუხაძე",
+   "death_year": 1210,
+   "shelf": "პოეზია",
+   "genre": "ოდა",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "top100_rank": 56
+  },
+  {
+   "id": "visramiani",
+   "title": "ვისრამიანი",
+   "author": "სარგის თმოგველი",
+   "death_year": 1200,
+   "shelf": "პროზა",
+   "genre": "რომანი",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "top100_rank": 57
+  },
+  {
+   "id": "amirandarejaniani",
+   "title": "ამირანდარეჯანიანი",
+   "author": "მოსე ხონელი",
+   "death_year": 1200,
+   "shelf": "პროზა",
+   "genre": "რომანი",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "top100_rank": 58
+  },
+  {
+   "id": "amiraniani",
+   "title": "ამირანიანი",
+   "author": "უცნობი ავტორი (ხალხური)",
+   "death_year": 1900,
+   "shelf": "პოეზია",
+   "genre": "ეპოსი",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "top100_rank": 59
+  },
+  {
+   "id": "eteriani",
+   "title": "ეთერიანი",
+   "author": "უცნობი ავტორი (ხალხური)",
+   "death_year": 1900,
+   "shelf": "პოეზია",
+   "genre": "ეპოსი",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "top100_rank": 60
+  },
+  {
+   "id": "tsameba-ketevan-dedoplisa",
+   "title": "წამება ქეთევან დედოფლისა",
+   "author": "თეიმურაზ პირველი",
+   "death_year": 1663,
+   "shelf": "პოეზია",
+   "genre": "პოემა",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "top100_rank": 61
+  },
+  {
+   "id": "siqvarulo-dzalsa-shensa",
+   "title": "სიყვარულო ძალსა შენსა",
+   "author": "ალექსანდრე ჭავჭავაძე",
+   "death_year": 1846,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "top100_rank": 65
+  },
+  {
+   "id": "darianuli",
+   "title": "დარიანული",
+   "author": "პაოლო იაშვილი",
+   "death_year": 1937,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "top100_rank": 84
+  },
+  {
+   "id": "nu-mtser",
+   "title": "ნუ მწერ",
+   "author": "მირზა გელოვანი",
+   "death_year": 1944,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS.",
+   "top100_rank": 89
+  },
+  {
+   "id": "abdulmesiani",
+   "title": "აბდულმესიანი",
+   "author": "იოანე შავთელი",
+   "death_year": 1220,
+   "shelf": "პოეზია",
+   "genre": "ოდა",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS."
+  },
+  {
+   "id": "pirveli-nabiji",
+   "title": "პირველი ნაბიჯი",
+   "author": "გიორგი წერეთელი",
+   "death_year": 1900,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS."
+  },
+  {
+   "id": "samshoblo-khevsurisa",
+   "title": "სამშობლო ხევსურისა",
+   "author": "რაფიელ ერისთავი",
+   "death_year": 1901,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS."
+  },
+  {
+   "id": "tetri-saqelo",
+   "title": "თეთრი საყელო",
+   "author": "მიხეილ ჯავახიშვილი",
+   "death_year": 1937,
+   "shelf": "პროზა",
+   "genre": "რომანი",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS."
+  },
+  {
+   "id": "eshmakis-kva",
+   "title": "ეშმაკის ქვა",
+   "author": "მიხეილ ჯავახიშვილი",
+   "death_year": 1937,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS."
+  },
+  {
+   "id": "shelotsva-radioti",
+   "title": "შელოცვა რადიოთი",
+   "author": "ნიკო ლორთქიფანიძე",
+   "death_year": 1944,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS."
+  },
+  {
+   "id": "tavsapriani-dedakatsi",
+   "title": "თავსაფრიანი დედაკაცი",
+   "author": "ნიკო ლორთქიფანიძე",
+   "death_year": 1944,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS."
+  },
+  {
+   "id": "basiani",
+   "title": "ბასიანი",
+   "author": "ლადო ასათიანი",
+   "death_year": 1943,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS."
+  },
+  {
+   "id": "sevdis-baghs-shevel",
+   "title": "სევდის ბაღს შეველ",
+   "author": "ბესიკი",
+   "death_year": 1791,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS."
+  },
+  {
+   "id": "kidev-amodis-mze",
+   "title": "კიდევ ამოდის მზე?",
+   "author": "ვაჟა-ფშაველა",
+   "death_year": 1915,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "source-needed",
+   "reason": "No transcription on Georgian Wikisource; candidates: NPLG e-books, TITUS."
+  },
+  {
+   "id": "didostatis-marjvena",
+   "title": "დიდოსტატის მარჯვენა",
+   "author": "კონსტანტინე გამსახურდია",
+   "death_year": 1975,
+   "shelf": "პროზა",
+   "genre": "რომანი",
+   "status": "copyright",
+   "public_domain_year": 2046,
+   "top100_rank": 10
+  },
+  {
+   "id": "data-tutashkhia",
+   "title": "დათა თუთაშხია",
+   "author": "ჭაბუა ამირეჯიბი",
+   "death_year": 2013,
+   "shelf": "პროზა",
+   "genre": "რომანი",
+   "status": "copyright",
+   "public_domain_year": 2084,
+   "top100_rank": 11
+  },
+  {
+   "id": "samoseli-pirveli",
+   "title": "სამოსელი პირველი",
+   "author": "გურამ დოჩანაშვილი",
+   "death_year": 2021,
+   "shelf": "პროზა",
+   "genre": "რომანი",
+   "status": "copyright",
+   "public_domain_year": 2092,
+   "top100_rank": 12
+  },
+  {
+   "id": "gzaze-erti-katsi-midioda",
+   "title": "გზაზე ერთი კაცი მიდიოდა",
+   "author": "ოთარ ჭილაძე",
+   "death_year": 2009,
+   "shelf": "პროზა",
+   "genre": "რომანი",
+   "status": "copyright",
+   "public_domain_year": 2080,
+   "top100_rank": 13
+  },
+  {
+   "id": "mtatsmindis-mtvare",
+   "title": "მთაწმინდის მთვარე",
+   "author": "გალაკტიონ ტაბიძე",
+   "death_year": 1959,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "copyright",
+   "public_domain_year": 2030,
+   "top100_rank": 15
+  },
+  {
+   "id": "lurja-tskhenebi",
+   "title": "ლურჯა ცხენები",
+   "author": "გალაკტიონ ტაბიძე",
+   "death_year": 1959,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "copyright",
+   "public_domain_year": 2030,
+   "top100_rank": 16
+  },
+  {
+   "id": "meri",
+   "title": "მერი",
+   "author": "გალაკტიონ ტაბიძე",
+   "death_year": 1959,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "copyright",
+   "public_domain_year": 2030,
+   "top100_rank": 27
+  },
+  {
+   "id": "gvelis-perangi",
+   "title": "გველის პერანგი",
+   "author": "გრიგოლ რობაქიძე",
+   "death_year": 1962,
+   "shelf": "პროზა",
+   "genre": "რომანი",
+   "status": "copyright",
+   "public_domain_year": 2033,
+   "top100_rank": 29
+  },
+  {
+   "id": "natvris-khe",
+   "title": "ნატვრის ხე",
+   "author": "გიორგი ლეონიძე",
+   "death_year": 1966,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "copyright",
+   "public_domain_year": 2037,
+   "top100_rank": 34
+  },
+  {
+   "id": "me-bebia-iliko-da-ilarioni",
+   "title": "მე, ბებია, ილიკო და ილარიონი",
+   "author": "ნოდარ დუმბაძე",
+   "death_year": 1984,
+   "shelf": "პროზა",
+   "genre": "რომანი",
+   "status": "copyright",
+   "public_domain_year": 2055,
+   "top100_rank": 35
+  },
+  {
+   "id": "tovli",
+   "title": "თოვლი",
+   "author": "გალაკტიონ ტაბიძე",
+   "death_year": 1959,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "copyright",
+   "public_domain_year": 2030,
+   "top100_rank": 38
+  },
+  {
+   "id": "mzeo-tibatvisa",
+   "title": "მზეო თიბათვისა",
+   "author": "გალაკტიონ ტაბიძე",
+   "death_year": 1959,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "copyright",
+   "public_domain_year": 2030,
+   "top100_rank": 39
+  },
+  {
+   "id": "igi",
+   "title": "იგი",
+   "author": "ჯემალ ქარჩხაძე",
+   "death_year": 1996,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "copyright",
+   "public_domain_year": 2067,
+   "top100_rank": 46
+  },
+  {
+   "id": "antonio-da-daviti",
+   "title": "ანტონიო და დავითი",
+   "author": "ჯემალ ქარჩხაძე",
+   "death_year": 1996,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "copyright",
+   "public_domain_year": 2067,
+   "top100_rank": 47
+  },
+  {
+   "id": "qovelman-chemman-mpovnelman",
+   "title": "ყოველმან ჩემმან მპოვნელმან",
+   "author": "ოთარ ჭილაძე",
+   "death_year": 2009,
+   "shelf": "პროზა",
+   "genre": "რომანი",
+   "status": "copyright",
+   "public_domain_year": 2080,
+   "top100_rank": 48
+  },
+  {
+   "id": "mtvaris-motatseba",
+   "title": "მთვარის მოტაცება",
+   "author": "კონსტანტინე გამსახურდია",
+   "death_year": 1975,
+   "shelf": "პროზა",
+   "genre": "რომანი",
+   "status": "copyright",
+   "public_domain_year": 2046,
+   "top100_rank": 49
+  },
+  {
+   "id": "kari-kris",
+   "title": "ქარი ქრის",
+   "author": "გალაკტიონ ტაბიძე",
+   "death_year": 1959,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "copyright",
+   "public_domain_year": 2030,
+   "top100_rank": 86
+  },
+  {
+   "id": "kebata-keba-nikortsmindas",
+   "title": "ქებათა ქება ნიკორწმინდას",
+   "author": "გალაკტიონ ტაბიძე",
+   "death_year": 1959,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "copyright",
+   "public_domain_year": 2030,
+   "top100_rank": 87
+  },
+  {
+   "id": "haki-adzba",
+   "title": "ჰაკი აძბა",
+   "author": "ლეო ქიაჩელი",
+   "death_year": 1963,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "copyright",
+   "public_domain_year": 2034,
+   "top100_rank": 90
+  },
+  {
+   "id": "sanavardo",
+   "title": "სანავარდო",
+   "author": "დემნა შენგელაია",
+   "death_year": 1980,
+   "shelf": "პროზა",
+   "genre": "რომანი",
+   "status": "copyright",
+   "public_domain_year": 2051,
+   "top100_rank": 91
+  },
+  {
+   "id": "qivchaghis-paemani",
+   "title": "ყივჩაღის პაემანი",
+   "author": "გიორგი ლეონიძე",
+   "death_year": 1966,
+   "shelf": "პოეზია",
+   "genre": "პოემა",
+   "status": "copyright",
+   "public_domain_year": 2037,
+   "top100_rank": 92
+  },
+  {
+   "id": "25-tebervali",
+   "title": "25 თებერვალი",
+   "author": "კოლაუ ნადირაძე",
+   "death_year": 1990,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "copyright",
+   "public_domain_year": 2061,
+   "top100_rank": 93
+  },
+  {
+   "id": "palestina-palestina",
+   "title": "პალესტინა, პალესტინა",
+   "author": "ირაკლი აბაშიძე",
+   "death_year": 1992,
+   "shelf": "პროზა",
+   "genre": "ციკლი",
+   "status": "copyright",
+   "public_domain_year": 2063,
+   "top100_rank": 94
+  },
+  {
+   "id": "alaverdoba",
+   "title": "ალავერდობა",
+   "author": "გურამ რჩეულიშვილი",
+   "death_year": 1960,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "copyright",
+   "public_domain_year": 2031,
+   "top100_rank": 95
+  },
+  {
+   "id": "katsi-romelsats-literatura-dzlier-uqvarda",
+   "title": "კაცი, რომელსაც ლიტერატურა ძლიერ უყვარდა",
+   "author": "გურამ დოჩანაშვილი",
+   "death_year": 2021,
+   "shelf": "პროზა",
+   "genre": "მოთხრობა",
+   "status": "copyright",
+   "public_domain_year": 2092,
+   "top100_rank": 96
+  },
+  {
+   "id": "vano-da-niko",
+   "title": "ვანო და ნიკო",
+   "author": "ერლომ ახვლედიანი",
+   "death_year": 2012,
+   "shelf": "პროზა",
+   "genre": "რომანი",
+   "status": "copyright",
+   "public_domain_year": 2083,
+   "top100_rank": 97
+  },
+  {
+   "id": "adamianta-sevda",
+   "title": "ადამიანთა სევდა",
+   "author": "გოდერძი ჩოხელი",
+   "death_year": 2007,
+   "shelf": "პროზა",
+   "genre": "რომანი",
+   "status": "copyright",
+   "public_domain_year": 2078,
+   "top100_rank": 98
+  },
+  {
+   "id": "modioda-nino-mtebit",
+   "title": "მოდიოდა ნინო მთებით",
+   "author": "ანა კალანდაძე",
+   "death_year": 2008,
+   "shelf": "პოეზია",
+   "genre": "ლექსი",
+   "status": "copyright",
+   "public_domain_year": 2079,
+   "top100_rank": 99
+  },
+  {
+   "id": "mogzauroba-qarabaghshi",
+   "title": "მოგზაურობა ყარაბაღში",
+   "author": "აკა მორჩილაძე",
+   "death_year": null,
+   "shelf": "პროზა",
+   "genre": "რომანი",
+   "status": "copyright",
+   "public_domain_year": null,
+   "top100_rank": 100
+  }
+ ]
 }

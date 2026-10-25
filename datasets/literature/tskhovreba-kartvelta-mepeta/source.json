@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "ლეონტი მროველი \"ცხოვრება ქართველთა მეფეთა\" (1955)",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=74002",
+  "revision": 74002,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "4ded40b5c67ca420d4ab35656aef30c261398014d1ab7c6172cfa1da628b9e55",
+  "sha256_md": "4388c54e7ea007cb76698623746a05bce644366dca87b8fa8fdbe2978a0c2487"
+}

@@ -1,10 +1,11 @@
 {
   "source": "Georgian Wikisource",
   "page": "განდეგილი",
-  "url": "https://ka.wikisource.org/wiki/%E1%83%92%E1%83%90%E1%83%9C%E1%83%93%E1%83%94%E1%83%92%E1%83%98%E1%83%9A%E1%83%98?oldid=72897",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=72897",
   "revision": 72897,
   "retrieved": "2026-07-11",
   "transcription_license": "CC BY-SA 4.0",
-  "sha256": "fba61fa9ec10928585cfc2f07f7ac7c8f90ffa650979b36947cb6723a8e0f8a5",
-  "corrections": "2026-10-25: typography and OCR fixes over the Wikisource revision: spaces after punctuation, none before; spaced hyphens and dialogue hyphens as dashes; stray characters; legacy-font footnotes decoded (anbani.db git log)"
+  "converter": "scripts/literature/import.py",
+  "sha256": "1972437cfafa5290c8d388e060f01810312c1664099e38e0b25698c02f00d76f",
+  "sha256_md": "d3a0f1d69216ad2e785ff84a037c9e0a4c6768645a1ab20c1b285050b39c9b7e"
 }

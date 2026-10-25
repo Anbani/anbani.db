@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "სულიკო",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=75310",
+  "revision": 75310,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "21681115e456bc8938c822f66063e3e8298258dede98a7d1e51ce103a2399439",
+  "sha256_md": "d4b59c3cee63ec77821815db1cf9274079c1642da995b0bc6f4775cbd9857d1e"
+}

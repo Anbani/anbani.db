@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "ჯანყი გურიაში",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=76197",
+  "revision": 76197,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "0adaa3d1b74796176fa74cb7d56644d33b46ba8ce64bb1bd86e26aedd52041ee",
+  "sha256_md": "6df508d718d409fa3c4cb9d8d816f7f9d67dec8b6a9f9e198b3fb641291c0308"
+}

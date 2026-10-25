@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "ბაში-აჩუკი",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=72749",
+  "revision": 72749,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "8676ba748bb6bc696bdd63668db049efd628809ef0097512c5a7a289e41b7bbf",
+  "sha256_md": "fc494b901d2b76ed05b678544afe2f44670bb9ee3674717709ba8d547491544b"
+}

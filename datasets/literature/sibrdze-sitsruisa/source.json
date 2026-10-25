@@ -1,10 +1,11 @@
 {
   "source": "Georgian Wikisource",
   "page": "წიგნი სიბრძნე სიცრუისა",
-  "url": "https://ka.wikisource.org/wiki/%E1%83%AC%E1%83%98%E1%83%92%E1%83%9C%E1%83%98_%E1%83%A1%E1%83%98%E1%83%91%E1%83%A0%E1%83%AB%E1%83%9C%E1%83%94_%E1%83%A1%E1%83%98%E1%83%AA%E1%83%A0%E1%83%A3%E1%83%98%E1%83%A1%E1%83%90?oldid=76066",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=76066",
   "revision": 76066,
   "retrieved": "2026-07-11",
   "transcription_license": "CC BY-SA 4.0",
-  "sha256": "1e61ff9df5dd6afc77029e1a6ddbeabcb1971eb8dc182bad101bdaf6fdbf0d1c",
-  "corrections": "2026-10-25: typography and OCR fixes over the Wikisource revision: spaces after punctuation, none before; spaced hyphens and dialogue hyphens as dashes; stray characters; legacy-font footnotes decoded (anbani.db git log)"
+  "converter": "scripts/literature/import.py",
+  "sha256": "97e9d5b4f68ef62ed1f76f517dfa38f4332a20f4d5ded08a9075b86a9c028280",
+  "sha256_md": "343c1ce456e9f698ffcf560637be11ff641fe5e61c14ffdbd60e4e063c1de942"
 }

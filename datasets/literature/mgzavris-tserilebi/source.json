@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "მგზავრის წერილები",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=74301",
+  "revision": 74301,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "f1497d1bc29cccdcf23f810280017e70525163fadb5ab9e365d5c315fe36cda1",
+  "sha256_md": "b3f41c4f0ee9a8f0dcbc81c5492d1c5deb0d3a03dd45bf29e6a17c552ad17fb4"
+}

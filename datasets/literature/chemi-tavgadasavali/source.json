@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "ჩემი თავგადასავალი",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=75850",
+  "revision": 75850,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "8ce7718ffa0712ae54417d41cd4ccafc6bbed1d8b1a6e40571d7ec30832a560b",
+  "sha256_md": "0887c9889b30ed0e9da85d39a494c828ce9583cb432d1bf71e159a344ba60ae5"
+}

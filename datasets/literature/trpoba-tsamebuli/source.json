@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "ტრფობა წამებული",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=75360",
+  "revision": 75360,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "c47ececcc050c6909e2e432296e36156f271d3d3f016992a75f45fb96d877015",
+  "sha256_md": "d3109e908eebcbea6261475722ea8f9c9dceae0ef088ec844ec1bc758e49e247"
+}

@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "სოლომან მორბელაძე",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=75271",
+  "revision": 75271,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "4103aa7fb4a61dafa26a963fa5493b47348268d6613f2aac7648ca3905a3c84b",
+  "sha256_md": "4deac90a59070bcf0a3b771238a370a025c73445116e52bf731634bfb1403441"
+}

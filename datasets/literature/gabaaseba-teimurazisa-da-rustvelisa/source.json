@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "არჩილ მეფე - \"გაბაასება თეიმურაზისა და რუსთველისა\"",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=72602",
+  "revision": 72602,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "193539da51517665e42a1b7819e37fa35d6c45c5eb7c1d6e92dee303ee5ebab6",
+  "sha256_md": "30b15b703415194e134fd3c1bbc9012c4541a90b38059fae9def7fd56a418c17"
+}

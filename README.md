@@ -16,13 +16,12 @@ Some of these datasets were fed to Neural Networks (char-rnn by Andrej Karpathy)
 | names.csv          | Baby names in Georgian with various origins             | kids.ge ©             | 2094       | [GET](https://github.com/Anbani/anbani.db/blob/master/datasets/names.csv)
 | anbani.csv         | Full Georgian alphabet with descriptions and char codes | unicode.org           | 175        | [GET](https://github.com/Anbani/anbani.db/blob/master/datasets/anbani.csv)
 | vefxistyaosani.txt | Raw text of "The Knight with the Panther skin"          |                       | 8524       | [GET](https://github.com/Anbani/anbani.db/blob/master/datasets/vefxistyaosani.txt)
-| literature/       | Public-domain Georgian prose and poetry with pinned source revisions and checksums | Georgian Wikisource / NPLG | 20 catalogued | [manifest](datasets/literature/manifest.json) |
+| literature/       | Public-domain Georgian prose and poetry (pandoc Markdown + plain text) with pinned source revisions and checksums; top-100 canon | Georgian Wikisource / NPLG | 66 texts, 126 catalogued | [manifest](datasets/literature/manifest.json) |
 
-The literature manifest distinguishes complete texts from entries that still need
-a trustworthy transcription or title correction. Wikisource-derived transcriptions
-retain revision-level provenance and are distributed under CC BY-SA 4.0; the
-underlying works are public domain in Georgia. Run `node scripts/import-literature.mjs`
-to reproducibly refresh the pinned texts.
+The literature manifest lists the ready texts and the rest of the top-100 canon (`source-needed`, `copyright` with
+the year each work enters the public domain). Each text is `text.md` (canonical, pandoc Markdown: EPUB/PDF-ready)
+plus a derived `text.txt`; format and importer: [datasets/literature/README.md](datasets/literature/README.md).
+Wikisource transcriptions keep revision-level provenance and are CC BY-SA 4.0; the works are public domain in Georgia.
 
 
 

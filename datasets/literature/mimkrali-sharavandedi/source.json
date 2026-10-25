@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "მიმქრალი შარავანდედი",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=74455",
+  "revision": 74455,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "9f6c7a12cf67e9d74b21a80e2ed629ae0551f1794b9a3572792b9eeb1ee64a37",
+  "sha256_md": "46c30d415608a72ff143cf3fd06240326f828346119cf4a7dc0c730974a96cbb"
+}

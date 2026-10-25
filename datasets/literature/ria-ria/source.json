@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "რია-რია",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=77835",
+  "revision": 77835,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "2f889e62a5654e8203dbf3ea40d0511ff59f73eb218f651f3e5c8581a249a186",
+  "sha256_md": "7113850d28b233385fc3a9a687f8dbb19c28e4065f4cb1dc0c651cab5725773d"
+}

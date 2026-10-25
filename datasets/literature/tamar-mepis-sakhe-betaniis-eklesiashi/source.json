@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "თამარ მეფის სახე ბეთანიის ეკლესიაში",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=73498",
+  "revision": 73498,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "20806a518ad83912b1d3e10354a71724caf398257bdf9e1770b86f7ecc2de7b4",
+  "sha256_md": "f8cd119e60aa28bcfa3877c2dc62e6bef1bd02c8de96419fe69630b7f192f379"
+}

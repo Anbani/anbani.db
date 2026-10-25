@@ -1,9 +1,11 @@
 {
   "source": "Georgian Wikisource",
   "page": "ლექსი მეწყერი",
-  "url": "https://ka.wikisource.org/wiki/%E1%83%9A%E1%83%94%E1%83%A5%E1%83%A1%E1%83%98_%E1%83%9B%E1%83%94%E1%83%AC%E1%83%A7%E1%83%94%E1%83%A0%E1%83%98?oldid=77801",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=77801",
   "revision": 77801,
   "retrieved": "2026-07-11",
   "transcription_license": "CC BY-SA 4.0",
-  "sha256": "414430ef74a909a9a53d65062d8d25d3f17925f4e581b8711d16d3f70d53db87"
+  "converter": "scripts/literature/import.py",
+  "sha256": "f2146853553429b084304f156b4e4ffb19bf7591c741ee202582eebd2a6478d9",
+  "sha256_md": "c1c106e403c0ff0dac9cd2612b97c7e6d187330d6e000d841621a3f9b1ef8126"
 }

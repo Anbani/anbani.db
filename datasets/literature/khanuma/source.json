@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "ხანუმა",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=76115",
+  "revision": 76115,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "07d483f5bb7bd0dcf89f3bb4c7c17ce4053ed8801270b98a0f9f0407c3e2b3e0",
+  "sha256_md": "343b2ff386260277369f29cb8e562580381d862d1392928d35941882c50d7df7"
+}

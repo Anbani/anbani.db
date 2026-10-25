@@ -1,0 +1,11 @@
+{
+  "source": "Georgian Wikisource",
+  "page": "ალი",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=72520",
+  "revision": 72520,
+  "retrieved": "2026-10-25",
+  "transcription_license": "CC BY-SA 4.0",
+  "converter": "scripts/literature/import.py",
+  "sha256": "526a95a00653933fb1611097354779ec5b0bdfe25931103b9dd42a5a3344b129",
+  "sha256_md": "143e3b013af95d817223ce8d4eef157d3cbfa6d82d105bea7732d0640f31da5a"
+}

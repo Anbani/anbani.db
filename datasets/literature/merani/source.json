@@ -1,9 +1,11 @@
 {
   "source": "Georgian Wikisource",
   "page": "მერანი",
-  "url": "https://ka.wikisource.org/wiki/%E1%83%9B%E1%83%94%E1%83%A0%E1%83%90%E1%83%9C%E1%83%98?oldid=74366",
+  "url": "https://ka.wikisource.org/w/index.php?oldid=74366",
   "revision": 74366,
   "retrieved": "2026-07-11",
   "transcription_license": "CC BY-SA 4.0",
-  "sha256": "1774b82bcba1947f223e3be0cbc79422f839b13dc5f7a8a242fd7c30e92a68ea"
+  "converter": "scripts/literature/import.py",
+  "sha256": "94f2dcf2ff5552b99c2d5a934faa3c4286bdd309dc67a78dd85caa860bae9680",
+  "sha256_md": "e9655febe45d80b58b204d47d794e7f3dac4c3d2337a1e854c13cc8e0d9d0815"
 }
