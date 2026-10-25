@@ -108,7 +108,9 @@
    "death_year": 1937,
    "status": "source-needed",
    "reason": "Wikisource index entry is a red link; no reusable full transcription was found.",
-   "top100_rank": 41
+   "top100_rank": 41,
+   "shelf": "პროზა",
+   "genre": "რომანი"
   },
   {
    "id": "gogia-uishvili",
@@ -130,7 +132,9 @@
    "status": "ready",
    "path": "../vefxistyaosani.txt",
    "source_review": "needed",
-   "top100_rank": 1
+   "top100_rank": 1,
+   "shelf": "პოეზია",
+   "genre": "პოემა"
   },
   {
    "id": "merani",
@@ -210,7 +214,9 @@
    "status": "transcription-needed",
    "source": "https://www.nplg.gov.ge/ebooks/authors/david_guramishvili/davitian.pdf",
    "reason": "Institutional scan found; Wikisource page contains only the collection contents. Also in George's Drive book collection.",
-   "top100_rank": 5
+   "top100_rank": 5,
+   "shelf": "პოეზია",
+   "genre": "პოემა"
   },
   {
    "id": "tano-tatano",
