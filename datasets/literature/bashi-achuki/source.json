@@ -6,6 +6,10 @@
   "retrieved": "2026-10-25",
   "transcription_license": "CC BY-SA 4.0",
   "converter": "scripts/literature/import.py",
-  "sha256": "8f2453ebabad09a7aa9591dab23a0e55a6c7b8cf2c7234081314e9a62d22b0b9",
-  "sha256_md": "fe2bd11591852767ee40013d0bbdf8b3ac4edbf3891e953a418799bc61181ff9"
+  "corrections": [
+    "ჩAვკლათ → ჩავკლათ",
+    "რ აც უნდა → რაც უნდა"
+  ],
+  "sha256": "3987cd230bd4bf8f0f8d1954575b4ea5072fdf816b645750e76058fd0bf7c5bc",
+  "sha256_md": "0c90fbb4ed666fed91c4f9f849dc4e0bc9c8bde4947e53bbb5a5ed97949d9b60"
 }

@@ -6,6 +6,9 @@
   "retrieved": "2026-10-25",
   "transcription_license": "CC BY-SA 4.0",
   "converter": "scripts/literature/import.py",
-  "sha256": "4e017b1cd915627c913815a019c0d41f39a69b146961783a8d4c5afbbf770519",
-  "sha256_md": "3405465bd6e5f881a19035e0a3d79403e7a0ef82658cab24ac43fb6807b660d7"
+  "corrections": [
+    "ჩამოვიlა → ჩამოვიდა"
+  ],
+  "sha256": "c9c0493cae95aeabba3351da0e1cf0faafdc809e358fb02b2cc9e0b535e4d932",
+  "sha256_md": "96022bb72db475ebda6fc985f54b72bd80b9a74ff9cf182376d6a92847ba3faa"
 }

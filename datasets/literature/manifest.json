@@ -302,7 +302,7 @@
     "revision": 72755
    },
    "top100_rank": 23,
-   "layout_check": "Canto I splits couplets across odd-line blocks ([5, 5, 9, 11])"
+   "layout_review": "missing-template refs and note cleaned (note 3 kept as a footnote); breaks before speech as in the source"
   },
   {
    "id": "mgzavris-tserilebi",
@@ -359,7 +359,7 @@
     "revision": 75441
    },
    "top100_rank": 24,
-   "layout_check": "a 7-line block in a couplet poem (canonical 6, 4, 6, 6, 6, 2, 2)"
+   "layout_review": "breaks match poetry.ge (independent transcription)"
   },
   {
    "id": "shemoghameba-mtatsmindazed",
@@ -788,7 +788,7 @@
     "revision": 73964
    },
    "top100_rank": 86,
-   "layout_check": "one 13-line block of irregular units (2+2+3+4+2)"
+   "layout_review": "one block, as poetry.ge and the NPLG school edition"
   },
   {
    "id": "elguja",
@@ -1640,7 +1640,7 @@
     "revision": 75020
    },
    "rank": 105,
-   "layout_check": "paragraph and song breaks lost inside long blocks"
+   "layout_review": "epigraph split into its two ვეფხისტყაოსანი lines; speaker/speech blocks as the source prints them"
   },
   {
    "id": "bazaletis-tba",
@@ -1837,7 +1837,7 @@
     "revision": 75505
    },
    "rank": 139,
-   "layout_check": "stage directions and speaker heading glued into verse blocks"
+   "layout_review": "section break restored; speaker and stage-direction lines as the source prints them"
   },
   {
    "id": "patara-kakhi",
@@ -1894,7 +1894,7 @@
     "revision": 74926
    },
    "rank": 147,
-   "layout_check": "two 13-line blocks in a poem of 3-line units"
+   "layout_review": "section dividers restored (source empty bullets; poetry.ge prints *)"
   },
   {
    "id": "chemi-lotsva",
@@ -1951,7 +1951,7 @@
     "revision": 75624
    },
    "rank": 155,
-   "layout_check": "66 lines as one block; edition may have paragraph breaks"
+   "layout_review": "one block, as poetry.ge"
   },
   {
    "id": "eteri",
@@ -2050,7 +2050,7 @@
     "revision": 75180
    },
    "rank": 168,
-   "layout_check": "last break lost; four 16-syllable lines wrapped in two"
+   "layout_review": "breaks match poetry.ge; a wrapped line rejoined (poetry.ge, NPLG)"
   },
   {
    "id": "mukhambazi",

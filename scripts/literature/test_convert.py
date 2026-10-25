@@ -16,6 +16,7 @@ class Typo(unittest.TestCase):
         self.assertEqual(typo.typo('_ შენდობა, მამაო! _ გაუშვირა'), '— შენდობა, მამაო! — გაუშვირა')
         self.assertEqual(typo.typo('პატრიარქი ,, მარშიმუნი‘‘, და <<ძენი>>'), 'პატრიარქი „მარშიმუნი“, და «ძენი»')
         self.assertEqual(typo.typo('ადგილებში,, თოვლების'), 'ადგილებში,, თოვლების')  # a stray comma, not a quote
+        self.assertEqual(typo.typo('მკითხა: _თქვენ ჩვენს„საერთო საქმეს“'), 'მკითხა: — თქვენ ჩვენს „საერთო საქმეს“')
 
     def test_dehyphen(self):
         vocab = {'რომელიც': 3, 'მეფე-დედოფალი': 1}

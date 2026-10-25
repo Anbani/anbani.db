@@ -6,6 +6,9 @@
   "retrieved": "2026-10-25",
   "transcription_license": "CC BY-SA 4.0",
   "converter": "scripts/literature/import.py",
-  "sha256": "ff7530e895e6f3d9b99923c3b06c9a93be9278b0ca2c2153e36b6257cc9915b5",
-  "sha256_md": "d99cfb95f0e4dc555eb99fcf874a48ed4d628dd05bfb887f191e0e3c0ebf5a74"
+  "corrections": [
+    "ქნა დ ა საკვირვალი → ქნა და საკვირვალი"
+  ],
+  "sha256": "30c1f7a305390351381a7873645efb45cf9bdf0252e951e0da450a11b3a2f717",
+  "sha256_md": "3e6772a17d4e0167a83a4ea547842fcd5547804e2be4da5d6c377ce6f40d4afe"
 }

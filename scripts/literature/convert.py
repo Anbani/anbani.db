@@ -305,6 +305,22 @@ def split_numbered(blocks):
     return out
 
 
+def split_dividers(b):
+    """A section-break line (∗) inside a block: the block ends there, the break stands alone."""
+    out, cur = [], []
+    for line in b[1]:
+        if line.strip() in ('∗', '*', '⁂', '∗ ∗ ∗', '* * *'):
+            if cur:
+                out.append((b[0], cur))
+            out.append((b[0], [line.strip()]))
+            cur = []
+        else:
+            cur.append(line)
+    if cur:
+        out.append((b[0], cur))
+    return out
+
+
 def restanza(blocks, n):
     """A poem in n-line stanzas: each run of stanza blocks between headings is re-cut into n-line stanzas when its
     lines add up (one line left over, a subtitle or a date, stands alone)."""
@@ -382,6 +398,7 @@ def numbered_prose(blocks):
 def tidy(blocks, title, verse_shelf, play=False, stanza_lines=None):
     out = []
     blocks = split_numbered(blocks)
+    blocks = [x for b in blocks for x in (split_dividers(b) if b[0] in ('para', 'stanza') else [b])]
     if not verse_shelf:
         blocks = numbered_prose(blocks)
     if stanza_lines:

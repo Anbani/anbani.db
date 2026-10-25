@@ -15,6 +15,7 @@ import typo
 from convert import convert, md2txt
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'datasets', 'literature')
+FIXES = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fixes')  # <id>.tsv: wrong, right, source of the fix
 API = 'https://ka.wikisource.org/w/api.php'
 UA = ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) '
       'Chrome/136.0.0.0 Safari/537.36 (john@gmail.com)')  # Wikisource refuses requests without a contact: only this one
@@ -25,7 +26,16 @@ CORRECTIONS = {
     'khevisberi-gocha': [  # as anbani.db 86d3ae9
         ('მტერს.შეხვდა', 'მტერს შეხვდა'), ('ოსებიდა ნუგზარ', 'ოსები და ნუგზარ'), ('საალერსოდ?ნ', 'საალერსოდ?'),
         ('ალერსი?ნ', 'ალერსი?'), ('გახადა?ნ-ონისეს', 'გახადა? ონისეს'), ('3ხოლოდ მაშინ', 'მხოლოდ მაშინ'),
-        ('დამ.ლული', 'დამალული'), ('სდებდნენ.     "', 'სდებდნენ.'), ('-  - მთები', '- მთები')],
+        ('დამ.ლული', 'დამალული'), ('სდებდნენ.     "', 'სდებდნენ.'), ('-  - მთები', '- მთები'),
+        ('მოიცალtს', 'მოიცალეს')],
+    # Latin keys typed in the wrong keyboard layout (Argon, 2026-10-26)
+    'bashi-achuki': [('ჩAვკლათ', 'ჩავკლათ'), ('რ აც უნდა', 'რაც უნდა')],
+    'gabaaseba-teimurazisa-da-rustvelisa': [('ქნა დ ა საკვირვალი', 'ქნა და საკვირვალი')],
+    'mamis-mkvleli': [('ჩამოვიlა', 'ჩამოვიდა')],
+    'lambalo-da-qasha': [('ჩადრებშI', 'ჩადრებში'), ('Aადრევაც', 'ადრევაც'), ('Uკვირდა', 'უკვირდა'), ('იშვიათI', 'იშვიათი'),
+                         ('ტოXლიშვილი', 'თოხლიშვილი'), ('ლომბალოშI', 'ლომბალოში'), ('სიოზDდი', 'სიოზდი'),
+                         ('ქუჩაშI', 'ქუჩაში'), ('შეშIნდი', 'შეშინდი'), ('ათIოდე', 'ათიოდე'),
+                         ('ყრილიFფალავანი', 'ყრილი ფალავანი')],
 }
 DASH_HYPHENS = {'mamis-mkvleli'}  # 'word- word': this transcription types the dialogue dash as a hyphen
 # Poems in regular stanzas whose source drops or misplaces the breaks: lines per stanza (Argon's per-poem review).
@@ -38,8 +48,10 @@ LAYOUT = {
     'gabaaseba-teimurazisa-da-rustvelisa': [('<br />\n213 ოთხი', '<br />\nოთხი')],  # a stanza number glued on
     'glakhis-naambobi': [('<p><br />\nპირვანდელი ვარიანტი მოთხრობისა “გლახის ნაამბობი” შესრულებულია 1859 წელს; ხოლო ბოლო '
                           'რედაქცია ეკუთვნის: I — VI თავები 1862 წელს, VII — XII თავები 1872 — 1873 წლებს. რედ.\n</p>', '')],  # editor's note
+    'ramdenime-surati-anu-epizodi-qachaghis-tskhovrebidam': [('ათავისუფლე მონები, მიღწვიან', 'ათავისუფლე მონები,<br />\nმიღწვიან')],  # two lines (ვეფხისტყაოსანი)
     'irines-bedniereba': [('<p>ირინეს ბედნიერება <br />\nსურათი სოფლის ცხოვრებიდან ორ მოქმედებად <br />\nმოქმედნი პირნი <br />',
                            '<p>სურათი სოფლის ცხოვრებიდან ორ მოქმედებად <br />\n<br />\nმოქმედნი პირნი <br />')],  # title repeated
+    'saghamo-gamosalmebisa': [('შეღამდა...<br />\nმარტო ვზი', 'შეღამდა... მარტო ვზი')],  # one line (NPLG, poetry.ge)
     'tano-tatano': [('დანაცარებო!<br />\n<br />\nბესარიონ გაბაშვილი (ბესიკი)<br />', 'დანაცარებო!<br />')],  # signature
 }
 LEGACY = str.maketrans('ÀÁÂÃÄÅÆÈÉÊËÌÍÏÐÑÒÓÔÖ×ØÙÚÛÜÝÞßàáãä', 'აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ')
@@ -70,7 +82,17 @@ def fix_kacia(h):
     return h + '<ol class="references">' + ''.join(f'<li>{x}</li>' for x in lis[:2]) + '</ol>'
 
 
-FIXUPS = {'khevisberi-gocha': fix_khevisberi, 'kacia-adamiani': fix_kacia}
+def fix_bedi(h):
+    """Three {{Ref}}s and one {{Note}} to templates ka.wikisource lacks: only note 3 (a variant reading) survives."""
+    refs = list(re.finditer(r'<a [^>]*title="თარგი:Ref[^"]*"[^>]*>([^<]*?)თარგი:Ref</a>', h))
+    assert len(refs) == 3, len(refs)
+    for i, m in reversed(list(enumerate(refs))):
+        h = h[:m.start()] + m.group(1) + ('<sup class="reference">[1]</sup>' if i == 2 else '') + h[m.end():]
+    m = re.search(r'<dl><dd>3\.<a [^>]*>თარგი:Note([^<]*)</a>([^<]*)</dd></dl>', h)
+    return h[:m.start()] + h[m.end():] + f'<ol class="references"><li>{m.group(1) + m.group(2)}</li></ol>'
+
+
+FIXUPS = {'khevisberi-gocha': fix_khevisberi, 'kacia-adamiani': fix_kacia, 'bedi-kartlisa': fix_bedi}
 
 
 def parse(page, revision, cache_file):
@@ -142,6 +164,7 @@ def main():
         if start:  # a 'ტექსტი' section: what precedes it is the page's apparatus (series box, editions, links)
             html = html[start.end():]
         html = re.sub(r'<b>\[\d{1,4}\]</b> ?', '', html)  # the printed edition's page numbers, bold in brackets
+        html = re.sub(r'(?:<ul>\s*<li>\s*)+(?:<br\s*/?>\s*)*(?:</li>\s*</ul>\s*)+', '\n<p>∗</p>\n', html)  # empty bullet: section break
         if w['id'] in FIXUPS:
             html = FIXUPS[w['id']](html)
         if w['id'] in TURNS:
@@ -156,6 +179,15 @@ def main():
             assert html.count(wrong) == 1, (w['id'], wrong, html.count(wrong))
             html = html.replace(wrong, right)
             corrections.append(f'{wrong} → {right}')
+        tsv = os.path.join(FIXES, w['id'] + '.tsv')
+        if os.path.exists(tsv):  # a proofread's typing errors: words, matched across the source's line wraps
+            for row in open(tsv, encoding='utf-8').read().splitlines()[1:]:
+                wrong, right = row.split('\t')[:2]
+                pat = r'(?<![ა-ჰ])' + r'\s+'.join(map(re.escape, wrong.split())) + r'(?![ა-ჰ])'
+                n = len(re.findall(pat, html))
+                assert n == 1, (w['id'], wrong, n)
+                html = re.sub(pat, lambda m: right, html)
+                corrections.append(f'{wrong} → {right}')
         retrieved = old.get('retrieved') or datetime.date.today().isoformat()
         source = {'site': 'Georgian Wikisource', 'page': ws['page']}
         if ws.get('parts'):

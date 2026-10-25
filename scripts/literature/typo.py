@@ -39,7 +39,9 @@ def typo(s):
     s = re.sub(r',,(?=\S)', '„', s)  # ,, typed for the low opening quote
     s = re.sub(rf'(^|\s),, ([{KA}][^,„“‘‖]{{0,60}}?)(‘‘|‖|“)', r'\1„\2“', s)  # ',, word‘‘' (else ',,' is a typo)
     s = s.replace('<<', '«').replace('>>', '»')
-    s = re.sub(r'(?:^|(?<=\s))_(?=\s)', '—', s)  # '_ ' typed for the dialogue dash
+    s = re.sub(rf'(?<=[{KA}])_(?=[{KA}])', ' ', s)  # '_' between two words: a space
+    s = re.sub(r'\s*-?_-?\s*', ' — ', s).strip()  # '_' (or '-_', '_-') typed for the dash
+    s = re.sub(rf'(?<=[{KA}])„', ' „', s)  # an opening quote glued to the word before
     s = re.sub(rf'(?<=[{KA}])([,;:!?])(?=[{KA}])', r'\1 ', s)
     s = re.sub(rf'(?<=[{KA}]{{2}})\.(?=[{KA}])', '. ', s)
     s = re.sub(rf'(?<=[{KA}]) +([,;:!?]|\.(?!\.))(?=\s|$)', r'\1', s)
