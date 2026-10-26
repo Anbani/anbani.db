@@ -39,6 +39,10 @@ def typo(s):
     s = re.sub(r',,(?=\S)', '„', s)  # ,, typed for the low opening quote
     s = re.sub(rf'(^|\s),, ([{KA}][^,„“‘‖]{{0,60}}?)(‘‘|‖|“)', r'\1„\2“', s)  # ',, word‘‘' (else ',,' is a typo)
     s = s.replace('<<', '«').replace('>>', '»')
+    # straight quotes: after a word and before a space or punctuation, closing; before a word, opening (Georgian „…“)
+    s = re.sub(r'\\+(?=["“”„])', '', s)  # backslash-escaped quotes left by the source's markup
+    s = re.sub(r'(?<=[^\s(\[—–«„:])"(?=[\s.,;:!?…)\]—–»¹²³⁴⁵⁶⁷⁸⁹⁰0-9[<-]|$)', '“', s)
+    s = re.sub(r'(?<![^\s(\[—–«:])"(?=\S)', '„', s)
     s = re.sub(rf'(?<=[{KA}])_(?=[{KA}])', ' ', s)  # '_' between two words: a space
     s = re.sub(r'\s*-?_-?\s*', ' — ', s).strip()  # '_' (or '-_', '_-') typed for the dash
     s = re.sub(rf'(?<=[{KA}])„', ' „', s)  # an opening quote glued to the word before

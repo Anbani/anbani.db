@@ -15,6 +15,7 @@ class Typo(unittest.TestCase):
         self.assertEqual(typo.typo('1858 - 1863 წ.'), '1858–1863 წ.')
         self.assertEqual(typo.typo('_ შენდობა, მამაო! _ გაუშვირა'), '— შენდობა, მამაო! — გაუშვირა')
         self.assertEqual(typo.typo('პატრიარქი ,, მარშიმუნი‘‘, და <<ძენი>>'), 'პატრიარქი „მარშიმუნი“, და «ძენი»')
+        self.assertEqual(typo.typo('ჰფიქრობს: "ჯაყომ!" და ("სიფროები"),'), 'ჰფიქრობს: „ჯაყომ!“ და („სიფროები“),')
         self.assertEqual(typo.typo('ადგილებში,, თოვლების'), 'ადგილებში,, თოვლების')  # a stray comma, not a quote
         self.assertEqual(typo.typo('მკითხა: _თქვენ ჩვენს„საერთო საქმეს“'), 'მკითხა: — თქვენ ჩვენს „საერთო საქმეს“')
 

@@ -6,6 +6,9 @@
   "retrieved": "2026-10-25",
   "transcription_license": "CC BY-SA 4.0",
   "converter": "scripts/literature/import.py",
-  "sha256": "f1497d1bc29cccdcf23f810280017e70525163fadb5ab9e365d5c315fe36cda1",
-  "sha256_md": "b3f41c4f0ee9a8f0dcbc81c5492d1c5deb0d3a03dd45bf29e6a17c552ad17fb4"
+  "corrections": [
+    "მზედუნ&lt;ამცნის → მზედუნ ამცნის"
+  ],
+  "sha256": "16ab468aba632552c5dfb8987bb75b7687e9c093b743259ebd846d3a93a538a6",
+  "sha256_md": "8234ebbf0694c209a73fd51dab7aeeb9aa9fe34ef6de2f35d9bc4d013a5dfd0c"
 }

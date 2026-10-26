@@ -46,6 +46,7 @@ STANZAS = {'gandegili': 4, 'gogcha': 4, 'tornike-eristavi': 4, 'poeti': 4, 'tama
 TURNS = {'lambalo-da-qasha'}  # one scanned paragraph; '_' starts each dialogue turn: a paragraph per turn
 # Layout slips and apparatus in the source HTML (no change to the work's text): (wrong, right), each found exactly once.
 LAYOUT = {
+    'mamis-mkvleli': [('</pre>\n<p>" \n</p>\n<pre>', '</pre>\n<pre>')],  # a paragraph of one stray quote
     'achrdili': [('სცნობ,— <br />\n<br />\n”თვით', 'სცნობ,— <br />\n”თვით')],  # II's last line split off
     'gabaaseba-teimurazisa-da-rustvelisa': [('<br />\n213 ოთხი', '<br />\nოთხი')],  # a stanza number glued on
     'glakhis-naambobi': [('<p><br />\nპირვანდელი ვარიანტი მოთხრობისა “გლახის ნაამბობი” შესრულებულია 1859 წელს; ხოლო ბოლო '
