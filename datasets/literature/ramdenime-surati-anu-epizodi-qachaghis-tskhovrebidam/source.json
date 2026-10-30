@@ -6,6 +6,6 @@
   "retrieved": "2026-10-26",
   "transcription_license": "CC BY-SA 4.0",
   "converter": "scripts/literature/import.py",
-  "sha256": "1a5efe76e0edd2ba1a9e77420e739ee7058816365b51ebc49756d0b07f152099",
-  "sha256_md": "ee6ea23d0061f8cc1c87109eb0ff4dd13f81e70e9f12fae2eda5b0c68e93df3c"
+  "sha256": "a343aeb7f0ea825b76bdbc222cc55a5aea41186032ac7a49483a19caa170ee5d",
+  "sha256_md": "052d39ee44da58adee9a1ce53250324d00502c306420390c3c3a181c6da1a07f"
 }
